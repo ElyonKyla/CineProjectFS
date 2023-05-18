@@ -49,38 +49,55 @@ a{
 
 .Cartelera{
     color: var(--ColorSecundario);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .Proximamente{
     color: var(--ColorSecundario);
 }
-.footer {
-  display: flex;
+.peliculas {
+    max-width: fit-content;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
 }
-
-
-
+.pelicula {
+    text-align: center;
+}
 .licenciasLegales {
     background-color: var(--ColorPrincipal);
     padding-top: 10px;
-    
+    display: flex;
 }
 
     
 .licenciasLegales a{
     color: beige;
     padding: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right:10px
 }
 .creativeCommons{
-    font-weight: 300;
+    display: flex;
+    flex: 34%;
+    max-width: 34%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.creativeCommons a{
+    size: 6px;
 }
 .menuFooter{
     font-weight: 500;
     text-transform: uppercase;
     line-height: 1.5;
-    justify-content: center;
+    display: flex;
+    flex: 66%;
+    max-width: 66%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
