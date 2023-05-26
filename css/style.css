@@ -71,6 +71,12 @@ a{
 .pelicula {
     text-align: center;
 }
+/*entradas*/
+.ticket {
+  display: inline;
+}
+
+/*Footer*/
 .licenciasLegales {
     background-color: var(--ColorPrincipal);
     padding-top: 10px;
