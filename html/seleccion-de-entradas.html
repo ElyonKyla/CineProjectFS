@@ -4,6 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cine Buleria - Donde van los maquinas</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
 
         <link rel="preload" href="css/normalize.css" as="style" />
         <link href="css/normalize.css" rel="stylesheet">
@@ -30,38 +31,50 @@
         
 
         </section>
-        <section class="entradas">
+        <section class="boletos">
+            <h1>Selecciona tus entradas</h1>
+            <h3>Puedes comprar 10 entradas máximo por transacción.</h3>
             <div class="contenedor">
-                <ul class="entradas">
-                    <li class="ticket">
-                        <div class="ticket__type">
-                            <p class="text">PACK FAMILIA</p>
-                        </div>
-                        <div class="ticket_price">
-                            <p class="price">6,9 €</p>
-                        </div>
-                            <div class="ticket__col ticket__qty">
-                                <div class="ticket__actions">
-                                    <div class="ticket__container">
-                                        <button type="button" class="ticket__action" disabled="" aria-label="Quitar un boleto PACK FAMILIA">
-                                            <svg width="7" height="7" viewBox="0 0 11 1">
-                                                <path fill="#08285b" fill-rule="nonzero" d="M0 1V0h11v1z"></path>
-                                            </svg>
-                                        </button>
-                                        <div class="ticket__input">0</div>
-                                            <button type="button" class="ticket__action" aria-label="Añadir un boleto PACK FAMILIA">
-                                                <svg width="7" height="7" viewBox="0 0 11 11">
-                                                    <g fill="#08285b" fill-rule="nonzero">
-                                                        <path d="M0 6V5h11v1z"></path>
-                                                        <path d="M6 11H5V0h1z"></path>
-                                                    </g>
-                                                </svg>
-                                            </button>
-                                    <div>
-                                </div>
-                            </div>
-                    </li>
-                </ul>
+                 <div class="entradas">
+                    <div class="ticket">  
+                        <p class="tipo-entrada">PACK FAMILIA</p>
+                        <p class="price">6,9 €</p>
+                            <button id="boton_restar">-</button>
+                            <p class="ticket__input">0</p>
+                            <button id="boton_sumar">+</button>
+                    </div>
+                    <div class="ticket">
+                        <p class="tipo-entrada">NIÑO &lt; 13 AÑOS</p>
+                        <p class="price">7,9 €</p>
+                            <button id="boton_restar">-</button>
+                            <p class="ticket__input">0</p>
+                            <button id="boton_sumar">+</button>
+                    </div>
+                    <div class="ticket">
+                        <p class="tipo-entrada">SENIOR &gt; 60 AÑOS</p>
+                        <p class="price">7,9 €</p>
+                            <button id="boton_restar">-</button>
+                            <p class="ticket__input">0</p>
+                            <button id="boton_sumar">+</button>
+                    </div>
+                    <div class="ticket">
+                        <p class="tipo-entrada">ADULTO</p>
+                        <p class="price">10,9 €</p>
+                            <button id="boton_restar">-</button>
+                            <p class="ticket__input">0</p>
+                            <button id="boton_sumar">+</button>
+                    </div>
+                    <div class="ticket">
+                        <p class="tipo-entrada">JOVEN (TARJETA/CARNET)</p>
+                        <p class="price">7,9 €</p>
+                            <button id="boton_restar">-</button>
+                            <p class="ticket__input">0</p>
+                            <button id="boton_sumar">+</button>
+                    </div>
+                </div> 
+                <div class="botonSiguiente">
+                <a href="/html/seleccion-de-butacas.html"> <button id="siguiente-entradas">Siguiente</button></a>
+                </div>
              </div>
         </section>
 
