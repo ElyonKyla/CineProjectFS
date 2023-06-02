@@ -51,6 +51,11 @@ a{
   text-decoration-color: var(--ColorPrincipal);
   background-color: var(--ColorSecundario);
 }
+.menu a:visited{
+  text-decoration: underline ;
+  text-decoration-color: var(--ColorPrincipal);
+  background-color: var(--ColorSecundario);
+}
 .menu a:hover{
     text-decoration: underline ;
     text-decoration-color: var(--ColorSecundario);
@@ -126,6 +131,31 @@ a{
 
 .botonSiguiente button:hover{
   border-color: var(--ColorPrincipal);
+}
+/* Promos**/
+.promociones  h2{
+  color: var(--ColorSecundario);
+  text-decoration: underline;
+}
+.promociones{
+  margin-bottom: 7%;
+}
+.promos{
+  display: flex;
+}
+.imgPromo {
+  display: flex;
+  flex: 65%;
+  max-width: 65%;
+  justify-content: flex-start;
+}
+.textoPromo{
+  flex:35%;
+  max-width: 35%;
+  display: flex; 
+  flex-wrap: wrap;
+  
+  justify-content: flex-end;
 }
 /*Footer*/
 .licenciasLegales {
