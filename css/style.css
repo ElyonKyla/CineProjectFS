@@ -1,6 +1,7 @@
 :root{
     --ColorPrincipal:#8c4469;
     --ColorSecundario:#177e83;
+    --ColorRefuerzo:#371b29;
     --FontPrincipal:'Open Sans', sans-serif; 
   
 }
@@ -62,6 +63,8 @@ a{
     text-decoration-thickness: 3px;
     /*line-height: 2.5;*/
 }
+
+
 
 .Cartelera{
     color: var(--ColorSecundario);
@@ -154,8 +157,16 @@ a{
   max-width: 35%;
   display: flex; 
   flex-wrap: wrap;
-  
+  color: var(--ColorRefuerzo);
   justify-content: flex-end;
+}
+/*Contacto*/
+.Localizar{
+  color: var(--ColorSecundario);
+}
+.Localizar iframe{
+  width: 75%;
+  height: 65%;
 }
 /*Footer*/
 .licenciasLegales {
@@ -456,25 +467,26 @@ a{
     /*carousel*/
     .carousel{
       display: none;
-  }
-  /*peliculas*/
-  .peliculas{
-    display: block;
-    max-width: fit-content;
-    text-align: center;
-  }
-  .Proximamente{
-    display: none;
-  }
-  /*footer*/
-    .licenciasLegales{
-      display: block;
     }
-    .creativeCommons{
+    /*peliculas*/
+    .peliculas{
+      display: block;
       max-width: fit-content;
+      text-align: center;
     }
-    .menuFooter{
-      display: block;
-      border-top:1px solid var(--ColorSecundario);
+    .Proximamente{
+      display: none;
     }
+    /*footer*/
+      .licenciasLegales{
+        display: block;
+        margin-top: 5%;
+      }
+      .creativeCommons{
+        max-width: fit-content;
+      }
+      .menuFooter{
+        display: block;
+        border-top:1px solid var(--ColorSecundario);
+      }
   }
