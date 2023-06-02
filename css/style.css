@@ -444,11 +444,37 @@ a{
     /*Menu Pincipal*/
     .menu{
         flex-wrap: wrap;
+        display: block;
+        text-align: center;
     }
     .menu a{
-        margin:0px;
+        margin: 2px;
         border-top:1px solid var(--ColorSecundario);
         padding: 10px 0px;
         display: block;
+    }
+    /*carousel*/
+    .carousel{
+      display: none;
+  }
+  /*peliculas*/
+  .peliculas{
+    display: block;
+    max-width: fit-content;
+    text-align: center;
+  }
+  .Proximamente{
+    display: none;
+  }
+  /*footer*/
+    .licenciasLegales{
+      display: block;
+    }
+    .creativeCommons{
+      max-width: fit-content;
+    }
+    .menuFooter{
+      display: block;
+      border-top:1px solid var(--ColorSecundario);
     }
   }
