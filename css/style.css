@@ -145,6 +145,34 @@ a{
 .butacas p{
   color: var(--ColorRefuerzo);
 }
+.pantalla p{
+  color: #d4d4d4;
+  margin-top: -15px;
+  font-size: 150%;
+}
+.graderia table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.asiento {
+  width: 10%;
+}
+.asiento button{
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/butaca-azul-removebg-preview.png);
+  border-color: #177e83;
+}
+.asiento button:hover{
+  background-image: url(../img/butaca-azul-removebg-preview.png);
+  border-color: #8c4469;
+}
+.asiento button:active{
+  background-image: url(../img/butaca-azul-removebg-preview.png);
+  border-color: #371b29;
+}
 /* Promos**/
 .promociones  h2{
   color: var(--ColorSecundario);
