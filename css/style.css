@@ -135,6 +135,16 @@ a{
 .botonSiguiente button:hover{
   border-color: var(--ColorPrincipal);
 }
+/*Seleccion Butacas*/
+.butacas{
+  text-align: center;
+}
+.butacas h1{
+  color: var(--ColorSecundario);
+}
+.butacas p{
+  color: var(--ColorRefuerzo);
+}
 /* Promos**/
 .promociones  h2{
   color: var(--ColorSecundario);
