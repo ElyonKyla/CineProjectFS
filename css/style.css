@@ -81,9 +81,43 @@ a{
     grid-template-rows: 50% 50%;
     grid-template-columns: repeat(5,1fr);
     gap: 15px;
+
 }
 .pelicula {
     text-align: center;
+    position: relative;
+}
+/*hover peliculas*/
+.imgPeli{
+  display: block;
+  width: 80%;
+  height: auto;
+}
+.infoPeli{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1.5s ease;
+  background-color: #c3ac76;
+}
+.textoPeli a{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.pelicula:hover .infoPeli{
+  opacity: 1;
 }
 /*entradas*/
 .boletos{
@@ -479,7 +513,10 @@ a{
   .carousel::after {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
   }*/
+/**********************************************************************************************/
 
+
+  /*media query y responsive desing*/
   @media (max-width:1140px){
     .contenedor{
         width: 80%;
