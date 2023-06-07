@@ -9,6 +9,7 @@ divFamilia.appendChild(entradaFam);
 let entradaNi = document.createElement("P");
 entradaNi.textContent=0;
 let divNi = document.querySelector(".entrada-ninho");
+entradaNi.classList.add("pEntradaNinho");
 divNi.appendChild(entradaNi);
 
 let entradaSenior = document.createElement("P");
@@ -27,8 +28,41 @@ let divJoven = document.querySelector(".entrada-joven");
 divJoven.appendChild(entradaJoven);
 
 /* Botoneria */
-
-
+//Familia
+const botonSumarEnFamilia =  document.querySelector("#boton_sumar-familia");
+botonSumarEnFamilia.addEventListener("click",function(){
+    let entradaFamilia = document.querySelector(".pEntradaFamilia");
+    var demoValue = parseInt(entradaFamilia.innerHTML);
+    var puntos = demoValue + 1;
+    entradaFamilia.textContent=puntos;
+    divFamilia.appendChild(entradaFamilia);
+})
+const botonRestarEnFamilia =  document.querySelector("#boton_restar-familia");
+botonRestarEnFamilia.addEventListener("click",function(){
+    let entradaFamilia = document.querySelector(".pEntradaFamilia");
+    var demoValue = parseInt(entradaFamilia.innerHTML);
+    var puntos = demoValue - 1;
+    entradaFamilia.textContent=puntos;
+    divFamilia.appendChild(entradaFamilia);
+})
+ //NIÑO
+ const botonSumarEnNinho =  document.querySelector("#boton_sumar-ninho");
+botonSumarEnNinho.addEventListener("click",function(){
+    let entradaNinho = document.querySelector(".pEntradaNinho");
+    var demoValue = parseInt(entradaNinho.innerHTML);
+    var puntos = demoValue + 1;
+    entradaNinho.textContent=puntos;
+    divNi.appendChild(entradaNinho);
+})
+const botonRestarEnNinho =  document.querySelector("#boton_restar-ninho");
+botonRestarEnNinho.addEventListener("click",function(){
+    let entradaNinho = document.querySelector(".pEntradaNinho");
+    var demoValue = parseInt(entradaNinho.innerHTML);
+    var puntos = demoValue - 1;
+    entradaNinho.textContent=puntos;
+    divNi.appendChild(entradaNinho);
+})
+ 
 /*boton final*/
 const botonButacas =  document.querySelector("#botonButacas");
 botonButacas.addEventListener("click",function(){
