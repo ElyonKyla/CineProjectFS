@@ -37,6 +37,10 @@ botonSumarEnFamilia.addEventListener("click",function(){
     let entradaFamilia = document.querySelector(".pEntradaFamilia");
     var demoValue = parseInt(entradaFamilia.innerHTML);
     var puntos = demoValue + 1;
+    if (puntos>10){
+        console.log("Numero de entradas maximo permitido excedido");
+        puntos=10;
+    }
     entradaFamilia.textContent=puntos;
     divFamilia.appendChild(entradaFamilia);
 })
@@ -45,6 +49,9 @@ botonRestarEnFamilia.addEventListener("click",function(){
     let entradaFamilia = document.querySelector(".pEntradaFamilia");
     var demoValue = parseInt(entradaFamilia.innerHTML);
     var puntos = demoValue - 1;
+    if (puntos <0){
+        puntos=0;
+    }
     entradaFamilia.textContent=puntos;
     divFamilia.appendChild(entradaFamilia);
 })
@@ -54,6 +61,10 @@ botonSumarEnNinho.addEventListener("click",function(){
     let entradaNinho = document.querySelector(".pEntradaNinho");
     var demoValue = parseInt(entradaNinho.innerHTML);
     var puntos = demoValue + 1;
+    if (puntos>10){
+        console.log("Numero de entradas maximo permitido excedido");
+        puntos=10;
+    }
     entradaNinho.textContent=puntos;
     divNi.appendChild(entradaNinho);
 })
@@ -62,6 +73,9 @@ botonRestarEnNinho.addEventListener("click",function(){
     let entradaNinho = document.querySelector(".pEntradaNinho");
     var demoValue = parseInt(entradaNinho.innerHTML);
     var puntos = demoValue - 1;
+    if (puntos <0){
+        puntos=0;
+    }
     entradaNinho.textContent=puntos;
     divNi.appendChild(entradaNinho);
 })
@@ -71,6 +85,10 @@ botonRestarEnNinho.addEventListener("click",function(){
       let entradaSenior = document.querySelector(".pEntradaSenior");
       var demoValue = parseInt(entradaSenior.innerHTML);
       var puntos = demoValue + 1;
+      if (puntos>10){
+        console.log("Numero de entradas maximo permitido excedido");
+        puntos=10;
+    }
       entradaSenior.textContent=puntos;
       divSenior.appendChild(entradaSenior);
   })
@@ -79,6 +97,9 @@ botonRestarEnNinho.addEventListener("click",function(){
       let entradaSenior = document.querySelector(".pEntradaSenior");
       var demoValue = parseInt(entradaSenior.innerHTML);
       var puntos = demoValue - 1;
+      if (puntos <0){
+        puntos=0;
+    }
       entradaSenior.textContent=puntos;
       divSenior.appendChild(entradaSenior);
   })
@@ -96,6 +117,9 @@ botonRestarEnNinho.addEventListener("click",function(){
         let entradaAdulto = document.querySelector(".pEntradaAdulto");
         var demoValue = parseInt(entradaAdulto.innerHTML);
         var puntos = demoValue - 1;
+        if (puntos <0){
+            puntos=0;
+        }
         entradaAdulto.textContent=puntos;
         divAdulto.appendChild(entradaAdulto);
     })
@@ -105,6 +129,10 @@ botonRestarEnNinho.addEventListener("click",function(){
         let entradaJoven = document.querySelector(".pEntradaJoven");
         var demoValue = parseInt(entradaJoven.innerHTML);
         var puntos = demoValue + 1;
+        if (puntos>10){
+            console.log("Numero de entradas maximo permitido excedido");
+            puntos=10;
+        }
         entradaJoven.textContent=puntos;
         divJoven.appendChild(entradaJoven);
     })
@@ -113,6 +141,9 @@ botonRestarEnNinho.addEventListener("click",function(){
         let entradaJoven = document.querySelector(".pEntradaJoven");
         var demoValue = parseInt(entradaJoven.innerHTML);
         var puntos = demoValue - 1;
+        if (puntos <0){
+            puntos=0;
+        }
         entradaJoven.textContent=puntos;
         divJoven.appendChild(entradaJoven);
     })
