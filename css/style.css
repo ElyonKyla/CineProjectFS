@@ -82,16 +82,30 @@ a{
     grid-template-columns: repeat(5,1fr);
     gap: 15px;
 
+} 
+/* .peliculas{
+  display: flex;
+  flex-wrap: wrap;
 }
+.peliculas div{
+  max-width: 20%;
+  flex: 20%;
+  padding-right: 15px;
+}*/
 .pelicula {
-    text-align: center;
+    /* text-align: center; */
     position: relative;
+}
+.pelicula h4{
+  margin-left: 10%;
 }
 /*hover peliculas*/
 .imgPeli{
   display: block;
   width: 80%;
   height: auto;
+  margin-left: 10%;
+  margin-top:2%;
 }
 .infoPeli{
   position: absolute;
@@ -103,9 +117,12 @@ a{
   width: 100%;
   opacity: 0;
   transition: 1.5s ease;
-  background-color: #c3ac76;
+  background-color: #161615;
 }
-.textoPeli a{
+.pelicula:hover .infoPeli{
+  opacity: 0.7;
+}
+.textoPeli {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -116,8 +133,24 @@ a{
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.pelicula:hover .infoPeli{
+.textoPeli2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -20%;
+}
+.textoPeli a:hover {
+  color: aliceblue;
+}
+.textoPeli2 a:hover{
   opacity: 1;
+  text-decoration: underline;
 }
 /*entradas*/
 .boletos{
