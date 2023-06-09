@@ -39,6 +39,7 @@ botonSumarEnFamilia.addEventListener("click",function(){
     var puntos = demoValue + 1;
     if (puntos>10){
         console.log("Numero de entradas maximo permitido excedido");
+        let PopUp = document.createElement("DIV");
         puntos=10;
     }
     entradaFamilia.textContent=puntos;
