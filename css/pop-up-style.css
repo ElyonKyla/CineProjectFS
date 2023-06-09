@@ -20,6 +20,7 @@
     border-radius: 15px;
     box-shadow: 0 0 5px #CCC; 	
     transition: all 5s ease-in-out;
+    background:white;
 }
 #cerrar{
     position: absolute;
