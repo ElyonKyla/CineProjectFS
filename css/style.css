@@ -213,9 +213,12 @@ a{
   color: var(--ColorRefuerzo);
 }
 .pantalla p{
-  color: #d4d4d4;
+  color: #177e83;
   margin-top: -15px;
   font-size: 150%;
+}
+.change-my-color{
+  filter: invert(35%) sepia(84%) saturate(428%) hue-rotate(134deg) brightness(90%) contrast(89%);
 }
 .graderia table{
   display: flex;
@@ -225,19 +228,20 @@ a{
 }
 .asiento {
   width: 10%;
+  color:lavender;
 }
 .asiento button{
   width: 35px;
   height: 35px;
-  background-image: url(../img/butaca-azul-removebg-preview.png);
-  border-color: #177e83;
+  background-image: url(../img/mini-butaca-perry.png);
+ border-style: none;
 }
 .asiento button:hover{
-  background-image: url(../img/butaca-azul-removebg-preview.png);
+  background-image: url(../img/mini-butaca_malva.png);
   border-color: #8c4469;
 }
 .asiento button:active{
-  background-image: url(../img/butaca-azul-removebg-preview.png);
+  background-image: url(../img/mini-butaca-morado.png);
   border-color: #371b29;
 }
 /* Promos**/
