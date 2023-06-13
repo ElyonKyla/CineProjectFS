@@ -233,7 +233,7 @@ a{
 .asiento button{
   width: 35px;
   height: 35px;
-  background-image: url(../img/mini-butaca-perry.png);
+  background-image: url(../img/mini-butaca-perry.png); 
  border-style: none;
 }
 .asiento button:hover{

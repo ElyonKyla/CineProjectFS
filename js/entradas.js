@@ -143,7 +143,7 @@ botonRestarEnNinho.addEventListener("click",function(){
     const botonRestarEnJoven =  document.querySelector("#boton_restar-joven");
     botonRestarEnJoven.addEventListener("click",function(){
         let entradaJoven = document.querySelector(".pEntradaJoven");
-        var demoValue = parseInt(entradaJoven.innerHTML);
+        var demoValue = (entradaJoven.innerHTML);
         var puntos = demoValue - 1;
         if (puntos <0){
             puntos=0;
@@ -151,8 +151,27 @@ botonRestarEnNinho.addEventListener("click",function(){
         entradaJoven.textContent=puntos;
         divJoven.appendChild(entradaJoven);
     })
+    function totalEntradas(){
+    let entradaFamilia = parseInt((document.querySelector(".pEntradaFamilia")).innerHTML);
+    //console.log(entradaFamilia, typeof entradaFamilia);
+    let entradaNinho = parseInt((document.querySelector(".pEntradaNinho")).innerHTML);
+    let entradaSenior = parseInt((document.querySelector(".pEntradaSenior")).innerHTML);
+    let entradaAdulto = parseInt((document.querySelector(".pEntradaAdulto")).innerHTML);
+    let entradaJoven = parseInt((document.querySelector(".pEntradaJoven")).innerHTML);
+    let totalEntradas = entradaFamilia+entradaNinho+entradaSenior+entradaAdulto+entradaJoven;
+    if (totalEntradas > 10){
+        console.log("Numero de entradas maximo permitido excedido");
+        let PopUp = document.querySelector("#popup");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
+    }
+    let precioEntradas = entradaFamilia*6.90+entradaNinho*7.90+entradaSenior*7.90+entradaAdulto*10.90+entradaJoven*7.90;
+    return totalEntradas ,precioEntradas;
+ }
+
 /*boton final*/
 const botonButacas =  document.querySelector("#botonButacas");
 botonButacas.addEventListener("click",function(){
+    totalEntradas();
     console.log("Vamos a seleccionar las butacas");
 })
