@@ -42,8 +42,6 @@ botonSumarEnFamilia.addEventListener("click",function(){
         let PopUp = document.querySelector("#popup");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
-        console.log("Numero de entradas maximo permitido excedido"); 
-        
     }
     entradaFamilia.textContent=puntos;
     divFamilia.appendChild(entradaFamilia);
@@ -55,6 +53,9 @@ botonRestarEnFamilia.addEventListener("click",function(){
     var puntos = demoValue - 1;
     if (puntos <0){
         puntos=0;
+        let PopUp = document.querySelector("#popup");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
     }
     entradaFamilia.textContent=puntos;
     divFamilia.appendChild(entradaFamilia);
@@ -66,8 +67,10 @@ botonSumarEnNinho.addEventListener("click",function(){
     var demoValue = parseInt(entradaNinho.innerHTML);
     var puntos = demoValue + 1;
     if (puntos>10){
-        console.log("Numero de entradas maximo permitido excedido");
         puntos=10;
+        let PopUp = document.querySelector("#popup");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
     }
     entradaNinho.textContent=puntos;
     divNi.appendChild(entradaNinho);
@@ -90,8 +93,10 @@ botonRestarEnNinho.addEventListener("click",function(){
       var demoValue = parseInt(entradaSenior.innerHTML);
       var puntos = demoValue + 1;
       if (puntos>10){
-        console.log("Numero de entradas maximo permitido excedido");
         puntos=10;
+        let PopUp = document.querySelector("#popup");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
     }
       entradaSenior.textContent=puntos;
       divSenior.appendChild(entradaSenior);
@@ -113,6 +118,12 @@ botonRestarEnNinho.addEventListener("click",function(){
         let entradaAdulto = document.querySelector(".pEntradaAdulto");
         var demoValue = parseInt(entradaAdulto.innerHTML);
         var puntos = demoValue + 1;
+        if (puntos>10){
+            puntos=10;
+            let PopUp = document.querySelector("#popup");
+            PopUp.style.visibility = 'visible';
+            PopUp.style.opacity= 1;
+        }
         entradaAdulto.textContent=puntos;
         divAdulto.appendChild(entradaAdulto);
     })
@@ -134,8 +145,10 @@ botonRestarEnNinho.addEventListener("click",function(){
         var demoValue = parseInt(entradaJoven.innerHTML);
         var puntos = demoValue + 1;
         if (puntos>10){
-            console.log("Numero de entradas maximo permitido excedido");
             puntos=10;
+            let PopUp = document.querySelector("#popup");
+            PopUp.style.visibility = 'visible';
+            PopUp.style.opacity= 1;
         }
         entradaJoven.textContent=puntos;
         divJoven.appendChild(entradaJoven);
@@ -147,6 +160,9 @@ botonRestarEnNinho.addEventListener("click",function(){
         var puntos = demoValue - 1;
         if (puntos <0){
             puntos=0;
+            let PopUp = document.querySelector("#popupPobre");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
         }
         entradaJoven.textContent=puntos;
         divJoven.appendChild(entradaJoven);
@@ -160,8 +176,11 @@ botonRestarEnNinho.addEventListener("click",function(){
     let entradaJoven = parseInt((document.querySelector(".pEntradaJoven")).innerHTML);
     let totalEntradas = entradaFamilia+entradaNinho+entradaSenior+entradaAdulto+entradaJoven;
     if (totalEntradas > 10){
-        console.log("Numero de entradas maximo permitido excedido");
         let PopUp = document.querySelector("#popup");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
+    }else if(totalEntradas == 0){
+        let PopUp = document.querySelector("#popupPobre");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
     }

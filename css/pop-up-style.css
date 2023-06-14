@@ -19,13 +19,15 @@
     padding: 2%;
     border-radius: 15px;
     box-shadow: 0 0 5px #CCC; 	
-    transition: all 5s ease-in-out;
+    /* transition: all 5s ease-in-out; */
     background:white;
+    margin-left: 28%;
+    margin-top: 15%;
 }
 #cerrar{
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 34%;
+    right: 28%;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
