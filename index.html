@@ -238,5 +238,39 @@
             
         </section>
         <script src="js/cartelera.js"></script>
+        <script>
+            function getpeliculas() {
+              var peliculas;
+             
+              var xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  //document.getElementById("get").innerHTML = this.responseText;
+                  peliculas = this.responseText;
+                }
+              };
+              xhttp.open("GET", "getdestinos.php", true);
+              xhttp.send();
+            }
+            </script>
     </body>
 </html>
+<?php
+	$server = "localhost";
+	$user = "root";
+	<!-- $pass = "PatataSalvaje"; -->
+    $pass = "FullStackVigo"
+	$db = "db";
+	$connection = mysqli_connect($server, $user, $pass, $db)
+		or die("Conection Error");
+ 
+ 
+	$getpeliculas = "select * from peliculas";
+	$result = mysqli_query($connection, $getpeliculas)
+		or die ("Insert Error");
+ 
+ 
+	while($row = mysqli_fetch_array($result)) {
+	    echo $row['pelicula'];
+	}
+?>
