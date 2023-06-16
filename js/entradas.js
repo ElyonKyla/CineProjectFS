@@ -1,5 +1,6 @@
 
 /*Carga de valores a 0 en las entradas*/
+let totalEntradasditas=0;
 let entradaFam = document.createElement("P");
 entradaFam.textContent=0;
 let divFamilia = document.querySelector(".entrada-familia");
@@ -45,6 +46,7 @@ botonSumarEnFamilia.addEventListener("click",function(){
     }
     entradaFamilia.textContent=puntos;
     divFamilia.appendChild(entradaFamilia);
+    totalEntradas();
 })
 const botonRestarEnFamilia =  document.querySelector("#boton_restar-familia");
 botonRestarEnFamilia.addEventListener("click",function(){
@@ -53,12 +55,13 @@ botonRestarEnFamilia.addEventListener("click",function(){
     var puntos = demoValue - 1;
     if (puntos <0){
         puntos=0;
-        let PopUp = document.querySelector("#popup");
+        let PopUp = document.querySelector("#popupPobre");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
     }
     entradaFamilia.textContent=puntos;
     divFamilia.appendChild(entradaFamilia);
+    
 })
  //NIÑO
  const botonSumarEnNinho =  document.querySelector("#boton_sumar-ninho");
@@ -74,6 +77,7 @@ botonSumarEnNinho.addEventListener("click",function(){
     }
     entradaNinho.textContent=puntos;
     divNi.appendChild(entradaNinho);
+    totalEntradas();
 })
 const botonRestarEnNinho =  document.querySelector("#boton_restar-ninho");
 botonRestarEnNinho.addEventListener("click",function(){
@@ -82,6 +86,9 @@ botonRestarEnNinho.addEventListener("click",function(){
     var puntos = demoValue - 1;
     if (puntos <0){
         puntos=0;
+        let PopUp = document.querySelector("#popupPobre");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
     }
     entradaNinho.textContent=puntos;
     divNi.appendChild(entradaNinho);
@@ -100,6 +107,7 @@ botonRestarEnNinho.addEventListener("click",function(){
     }
       entradaSenior.textContent=puntos;
       divSenior.appendChild(entradaSenior);
+      totalEntradas();
   })
   const botonRestarEnSenior =  document.querySelector("#boton_restar-senior");
   botonRestarEnSenior.addEventListener("click",function(){
@@ -108,6 +116,9 @@ botonRestarEnNinho.addEventListener("click",function(){
       var puntos = demoValue - 1;
       if (puntos <0){
         puntos=0;
+        let PopUp = document.querySelector("#popupPobre");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
     }
       entradaSenior.textContent=puntos;
       divSenior.appendChild(entradaSenior);
@@ -126,6 +137,7 @@ botonRestarEnNinho.addEventListener("click",function(){
         }
         entradaAdulto.textContent=puntos;
         divAdulto.appendChild(entradaAdulto);
+        totalEntradas();
     })
     const botonRestarEnAdulto =  document.querySelector("#boton_restar-adulto");
     botonRestarEnAdulto.addEventListener("click",function(){
@@ -134,6 +146,9 @@ botonRestarEnNinho.addEventListener("click",function(){
         var puntos = demoValue - 1;
         if (puntos <0){
             puntos=0;
+            let PopUp = document.querySelector("#popupPobre");
+        PopUp.style.visibility = 'visible';
+        PopUp.style.opacity= 1;
         }
         entradaAdulto.textContent=puntos;
         divAdulto.appendChild(entradaAdulto);
@@ -152,6 +167,7 @@ botonRestarEnNinho.addEventListener("click",function(){
         }
         entradaJoven.textContent=puntos;
         divJoven.appendChild(entradaJoven);
+        totalEntradas();
     })
     const botonRestarEnJoven =  document.querySelector("#boton_restar-joven");
     botonRestarEnJoven.addEventListener("click",function(){
@@ -174,18 +190,18 @@ botonRestarEnNinho.addEventListener("click",function(){
     let entradaSenior = parseInt((document.querySelector(".pEntradaSenior")).innerHTML);
     let entradaAdulto = parseInt((document.querySelector(".pEntradaAdulto")).innerHTML);
     let entradaJoven = parseInt((document.querySelector(".pEntradaJoven")).innerHTML);
-    let totalEntradas = entradaFamilia+entradaNinho+entradaSenior+entradaAdulto+entradaJoven;
-    if (totalEntradas > 10){
+     totalEntradasditas = entradaFamilia+entradaNinho+entradaSenior+entradaAdulto+entradaJoven;
+    if (totalEntradasditas > 10){
         let PopUp = document.querySelector("#popup");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
-    }else if(totalEntradas == 0){
+    }else if(totalEntradasditas == 0){
         let PopUp = document.querySelector("#popupPobre");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
     }
     let precioEntradas = entradaFamilia*6.90+entradaNinho*7.90+entradaSenior*7.90+entradaAdulto*10.90+entradaJoven*7.90;
-    return totalEntradas ,precioEntradas;
+    return totalEntradasditas ,precioEntradas;
  }
 
 /*boton final*/
