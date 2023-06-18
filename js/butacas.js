@@ -1,6 +1,6 @@
 
 var arrayButacas = new Array();
-
+const entradasMaximas = localStorage.getItem("entradasMaximas");
 
 
 var clicA1 = 0;

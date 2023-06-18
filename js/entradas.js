@@ -212,7 +212,8 @@ botonRestarEnNinho.addEventListener("click",function(){
     }
     let precioEntradas = entradaFamilia*6.90+entradaNinho*7.90+entradaSenior*7.90+entradaAdulto*10.90+entradaJoven*7.90;
     
-    return totalEntradasditas ,precioEntradas;
+    localStorage.setItem("entradasMaximas",totalEntradasditas);
+    
  }
 
 /*boton final*/
