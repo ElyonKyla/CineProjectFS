@@ -1,0 +1,8 @@
+[
+    { "titulo": "Indiana Jones",
+     "id": 335977,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Barbie",
+    "id": 346698,
+    "sesiones": ["16:00","18:30","21:00" ]}
+]

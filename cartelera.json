@@ -1,0 +1,20 @@
+[
+    { "titulo": "Spiderman",
+     "id": 569094,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Furius X",
+    "id": 385687,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Flash",
+    "id": 298618,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Operación Kandahar",
+    "id": 717930,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Transformers: El despertar ",
+    "id": 667538,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"La Sirenita",
+    "id": 447277,
+    "sesiones": ["16:00","18:30","21:00" ]}
+    ]

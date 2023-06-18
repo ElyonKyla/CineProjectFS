@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -19,7 +17,7 @@ session_start();
         <link href="/css/pop-up-style.css" rel="stylesheet">
     </head>
     <body>
-        <section id="movies-container"></section> 
+
         <section class="header">
             <nav>
             
@@ -28,7 +26,7 @@ session_start();
                              <div class="imagen"> 
                                 <a href=""><img src="img/logo.png" ></a>
                             </div>
-                                
+
                                 <div class="marcaBuleria"><a  href="index.php">CINES</br>BULERIA</a></div>
                                 <a href="#Cartelera">Cartelera</a>
                                 <a href="#Proximamente">Próximamente</a>
@@ -107,72 +105,13 @@ session_start();
                     </section>
             </div>
         </section>
-
-        <section class="Cartelera" id="Cartelera">
+        <section class="Cartelera" >
             <div class="contenedor">
                 <h1>Cartelera</h1>
-                <div class="peliculas">
-                    <div class="pelicula">
-                        <img class="imgPeli" alt=""  src="img/4698.jpg">
-                        <div class="infoPeli">
-                            <button class="textoPeli" id="comprar">Comprar</button>
-                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
-                        </div>
-                        <h4>Spiderman: Across the Spiderverse</h4>
-                    </div>
-                    <div class="pelicula">
-                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
-                        <div class="infoPeli">
-                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
-                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
-                        </div>
-                        <h4>Furious X</h4>
-                    </div>
-                    
-                    <div class="pelicula">
-                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4706/1/1/4706.jpg">
-                        <div class="infoPeli">
-                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
-                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
-                        </div>
-                        <h4>Posesión infernal: El despertar</h4>
-                    </div>
-                    <div class="pelicula">
-                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
-                        <div class="infoPeli">
-                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
-                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
-                        </div>
-                        <h4>Furious X</h4>
-                    </div>
-                    <div class="pelicula">
-                        <img class="imgPeli" alt=""  src="img/4698.jpg">
-                        <div class="infoPeli">
-                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
-                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
-                        </div>
-                        <h4>Spiderman: Across the Spiderverse</h4>
-                    </div>
-                    <div class="pelicula">
-                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
-                        <div class="infoPeli">
-                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
-                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
-                        </div>
-                        <h4>Furious X</h4>
-                    </div>
-                     <div class="pelicula">
-                            <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
-                            <div class="infoPeli">
-                                <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
-                                <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
-                            </div>
-                            <h4>Furious X</h4>
-                            
-                        </div>
-                </div>   
+                <div class="peliculas" id="movies-container"></div>
             </div>
-        </section>
+        </section> 
+        
         
         <section class="Proximamente" id="Proximamente">
             <div class="contenedor">
@@ -267,8 +206,9 @@ session_start();
                 </div>
             </div>
         </div>
-        <script src="js/cartelera.js"></script>
         <script src="js/api.js"></script>
+        <script src="js/cartelera.js"></script>
+        
             
             
     </body>
