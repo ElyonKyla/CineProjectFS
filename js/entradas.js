@@ -61,6 +61,7 @@ botonRestarEnFamilia.addEventListener("click",function(){
     }
     entradaFamilia.textContent=puntos;
     divFamilia.appendChild(entradaFamilia);
+    totalEntradas();
     
 })
  //NIÑO
@@ -92,6 +93,7 @@ botonRestarEnNinho.addEventListener("click",function(){
     }
     entradaNinho.textContent=puntos;
     divNi.appendChild(entradaNinho);
+    totalEntradas();
 })
   //SENIOR
   const botonSumarEnSenior =  document.querySelector("#boton_sumar-senior");
@@ -122,6 +124,7 @@ botonRestarEnNinho.addEventListener("click",function(){
     }
       entradaSenior.textContent=puntos;
       divSenior.appendChild(entradaSenior);
+      totalEntradas();
   })
     //ADULTO
     const botonSumarEnAdulto =  document.querySelector("#boton_sumar-adulto");
@@ -152,6 +155,7 @@ botonRestarEnNinho.addEventListener("click",function(){
         }
         entradaAdulto.textContent=puntos;
         divAdulto.appendChild(entradaAdulto);
+        totalEntradas();
     })
     //JOVEN
     const botonSumarEnJoven =  document.querySelector("#boton_sumar-joven");
@@ -182,8 +186,10 @@ botonRestarEnNinho.addEventListener("click",function(){
         }
         entradaJoven.textContent=puntos;
         divJoven.appendChild(entradaJoven);
+        totalEntradas();
     })
     function totalEntradas(){
+        let botonSigui = document.querySelector("#botonSiguiente");
     let entradaFamilia = parseInt((document.querySelector(".pEntradaFamilia")).innerHTML);
     //console.log(entradaFamilia, typeof entradaFamilia);
     let entradaNinho = parseInt((document.querySelector(".pEntradaNinho")).innerHTML);
@@ -191,6 +197,9 @@ botonRestarEnNinho.addEventListener("click",function(){
     let entradaAdulto = parseInt((document.querySelector(".pEntradaAdulto")).innerHTML);
     let entradaJoven = parseInt((document.querySelector(".pEntradaJoven")).innerHTML);
      totalEntradasditas = entradaFamilia+entradaNinho+entradaSenior+entradaAdulto+entradaJoven;
+    if (totalEntradasditas >=1){
+        botonSigui.style.visibility='visible';
+    }
     if (totalEntradasditas > 10){
         let PopUp = document.querySelector("#popup");
         PopUp.style.visibility = 'visible';
@@ -199,6 +208,7 @@ botonRestarEnNinho.addEventListener("click",function(){
         let PopUp = document.querySelector("#popupPobre");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
+        botonSigui.style.visibility='hidden';
     }
     let precioEntradas = entradaFamilia*6.90+entradaNinho*7.90+entradaSenior*7.90+entradaAdulto*10.90+entradaJoven*7.90;
     return totalEntradasditas ,precioEntradas;

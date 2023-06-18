@@ -218,6 +218,9 @@ a{
 .botonSiguiente button:hover{
   border-color: var(--ColorPrincipal);
 }
+#botonSiguiente {
+  visibility: hidden;
+}
 /*Seleccion Butacas*/
 .butacas{
   text-align: center;
