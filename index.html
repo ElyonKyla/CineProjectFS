@@ -1,0 +1,275 @@
+<?php
+session_start();
+?>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cine Buleria - Donde van los maquinas</title>
+        <link rel="icon" href="favicon.png" type="image/x-icon"/>
+
+        <link rel="preload" href="css/normalize.css" as="style" />
+        <link href="css/normalize.css" rel="stylesheet">
+
+        <link rel="preload" href="css/style.css" as="style" />
+        <link href="css/style.css" rel="stylesheet">
+
+        <link rel="preload" href="/css/pop-up-style.css" as="style" />
+        <link href="/css/pop-up-style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section id="movies-container"></section> 
+        <section class="header">
+            <nav>
+            
+                <div class="contenedor">
+                        <div class="menu">
+                             <div class="imagen"> 
+                                <a href=""><img src="img/logo.png" ></a>
+                            </div>
+                                
+                                <div class="marcaBuleria"><a  href="index.php">CINES</br>BULERIA</a></div>
+                                <a href="#Cartelera">Cartelera</a>
+                                <a href="#Proximamente">Próximamente</a>
+                                <a href="/html/preventa.html">Preventa de Entradas</a>
+                                <a href="/html/promociones.html">Promociones</a>
+                               <!--  <a href="/html/nuestras-salas.html">Nuestras Salas</a>-->
+                                <a href="/pdf/menucine.pdf" target="_blank">Menú Cine</a> 
+                                <a href="/html/contacto.html">Contacto</a>
+                        </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="banner">
+            <div class="contenedor">
+                <section class="carousel" aria-label="Gallery">
+                    <ol class="carousel__viewport">
+                        <li id="carousel__slide1"
+                            tabindex="0"
+                            class="carousel__slide">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide4"
+                            class="carousel__prev"></a>
+                            <a href="#carousel__slide2"
+                            class="carousel__next"></a>
+                        </div>
+                        </li>
+                        <li id="carousel__slide2"
+                            tabindex="0"
+                            class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide1"
+                            class="carousel__prev"></a>
+                        <a href="#carousel__slide3"
+                            class="carousel__next"></a>
+                        </li>
+                        <li id="carousel__slide3"
+                            tabindex="0"
+                            class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide2"
+                            class="carousel__prev"></a>
+                        <a href="#carousel__slide4"
+                            class="carousel__next"></a>
+                        </li>
+                        <li id="carousel__slide4"
+                            tabindex="0"
+                            class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide3"
+                            class="carousel__prev"></a>
+                        <a href="#carousel__slide1"
+                            class="carousel__next"></a>
+                        </li>
+                    </ol>
+                    <aside class="carousel__navigation">
+                        <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1"
+                            class="carousel__navigation-button"></a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2"
+                            class="carousel__navigation-button"></a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3"
+                            class="carousel__navigation-button"></a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide4"
+                            class="carousel__navigation-button"></a>
+                        </li>
+                        </ol>
+                    </aside>
+                    </section>
+            </div>
+        </section>
+
+        <section class="Cartelera" id="Cartelera">
+            <div class="contenedor">
+                <h1>Cartelera</h1>
+                <div class="peliculas">
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="img/4698.jpg">
+                        <div class="infoPeli">
+                            <button class="textoPeli" id="comprar">Comprar</button>
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Spiderman: Across the Spiderverse</h4>
+                    </div>
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
+                        <div class="infoPeli">
+                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Furious X</h4>
+                    </div>
+                    
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4706/1/1/4706.jpg">
+                        <div class="infoPeli">
+                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Posesión infernal: El despertar</h4>
+                    </div>
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
+                        <div class="infoPeli">
+                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Furious X</h4>
+                    </div>
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="img/4698.jpg">
+                        <div class="infoPeli">
+                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Spiderman: Across the Spiderverse</h4>
+                    </div>
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
+                        <div class="infoPeli">
+                            <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Furious X</h4>
+                    </div>
+                     <div class="pelicula">
+                            <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
+                            <div class="infoPeli">
+                                <button class="textoPeli" class="textoPeli" id="comprar">Comprar</button>
+                                <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                            </div>
+                            <h4>Furious X</h4>
+                            
+                        </div>
+                </div>   
+            </div>
+        </section>
+        
+        <section class="Proximamente" id="Proximamente">
+            <div class="contenedor">
+                <h2>Proximamente</h2>
+                <div class="peliculas">
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="img/4698.jpg">
+                        <div class="infoPeli">
+                            <!-- <a button class="textoPeli" class="textoPeli" id="comprar">Comprar</a> -->
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Spiderman: Across the Spiderverse</h4>
+                    </div>
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
+                        <div class="infoPeli">
+                            <!-- <button class="textoPeli" class="textoPeli" id="comprar">Comprar</a> -->
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Furious X</h4>
+                    </div>
+                    
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4706/1/1/4706.jpg">
+                        <div class="infoPeli">
+                            <!-- <button class="textoPeli" class="textoPeli" id="comprar">Comprar</a> -->
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Posesión infernal: El despertar</h4>
+                    </div>
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="https://eu-static.yelmocines.es/content/img/movies/posters/4692/1/1/4692.jpg">
+                        <div class="infoPeli">
+                            <!-- <button class="textoPeli" class="textoPeli" id="comprar">Comprar</a> -->
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Furious X</h4>
+                    </div>
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="img/4698.jpg">
+                        <div class="infoPeli">
+                            <!-- <button class="textoPeli" class="textoPeli" id="comprar">Comprar</a> -->
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Spiderman: Across the Spiderverse</h4>
+                    </div>
+                    <div class="pelicula">
+                        <img class="imgPeli" alt=""  src="img/4698.jpg">
+                        <div class="infoPeli">
+                            <!-- <button class="textoPeli" class="textoPeli" id="comprar">Comprar</a> -->
+                            <a href="/html/pelicula-info.html" class="textoPeli2">Ver info</a>
+                        </div>
+                        <h4>Spiderman: Across the Spiderverse</h4>
+                    </div>
+                </div>  
+            </div>
+            
+        </section>
+        <section class="footer">
+            <div class="contenedor">
+                <div class="licenciasLegales">
+                    <div class="creativeCommons">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                            <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                        </a><br /> 
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> Este obra está bajo una licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.
+                    </div>
+                    <div class="menuFooter">
+                        <a href="/html/politica-de-cookies.html">Politica de Cookies</a>
+                        <a href="html/proteccion-de-datos.html">Protección de Datos</a>
+                    </div>    
+                </div>
+            </div>
+            
+        </section>
+        <!-- POP-UP -->
+        
+        <div id="popupSesiones" class="overlay">
+            <div id="popupBody">
+                <h2>Sesión de hoy</h2>
+                <div class="sesioncillas">
+                    <div class="botonSiguiente">
+                        <a href="/html/seleccion-de-entradas.html"> <button id="16:00">16:00</button></a>
+                    </div>
+                    <div class="botonSiguiente">
+                        <a href="/html/seleccion-de-entradas.html"> <button id="18:30">18:30</button></a>
+                    </div>
+                    <div class="botonSiguiente">
+                        <a href="/html/seleccion-de-entradas.html"> <button id="21:00">21:00</button></a>
+                    </div>
+                    <a id="cerrar" href="index.html">&times;</a>
+                </div>
+            </div>
+        </div>
+        <script src="js/cartelera.js"></script>
+        <script src="js/api.js"></script>
+            
+            
+    </body>
+</html>
