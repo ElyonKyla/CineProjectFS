@@ -605,9 +605,29 @@ a{
       display: block;
       max-width: fit-content;
       text-align: center;
+      margin-left: 12%;
     }
     .Proximamente{
       display: none;
+    }
+    /**/
+    .ticket {
+      max-width: 100%;
+      flex-wrap: wrap;
+       justify-content: flex-end; 
+    }
+    .change-my-color {
+      width: 90%;
+    }
+    .asiento button{
+      width: 25px;
+      height: 25px;
+      background-image: url(../img/25-butaca-perry.png); 
+    }
+    .asiento button:active{
+      width: 25px;
+      height: 25px;
+      background-image: url(../img/25-butaca-morado.png);
     }
     /*footer*/
       .licenciasLegales{

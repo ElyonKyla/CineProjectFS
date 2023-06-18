@@ -40,3 +40,15 @@
     color: #371b29;;
     transition: all 200ms;
 }
+
+@media(max-width:768px){
+  #popupBody{
+    margin-left: 8%;
+    width: 75%;
+  }
+  #cerrar{
+    top: 14%;
+  }
+
+
+}
