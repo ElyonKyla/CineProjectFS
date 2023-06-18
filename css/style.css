@@ -40,7 +40,13 @@ a{
     line-height: 1.5;
     justify-content: center;
 }
-
+.menu .imagen{
+  max-width: 20%;
+}
+.menu img{
+  width: 30%;
+  padding: -10px;
+}
 .menu a{
     color: beige;
     font-size: 85%;
@@ -575,6 +581,14 @@ a{
         border-top:1px solid var(--ColorSecundario);
         padding: 10px 0px;
         display: block;
+    }
+    .menu .imagen {
+      max-width: 100%;
+      color: antiquewhite;
+    }
+  
+    .menu img{
+      width: 70%;
     }
     /*carousel*/
     .carousel{

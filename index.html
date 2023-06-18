@@ -11,14 +11,25 @@
 
         <link rel="preload" href="css/style.css" as="style" />
         <link href="css/style.css" rel="stylesheet">
+
+        <link rel="preload" href="/css/pop-up-style.css" as="style" />
+        <link href="/css/pop-up-style.css" rel="stylesheet">
     </head>
     <body>
+        <section id="movies-container"></section> 
         <section class="header">
             <nav>
             
                 <div class="contenedor">
                         <div class="menu">
-                                <a href="">Inicio</a>
+                             <div class="imagen"> 
+                                
+                                <a href="">
+                                    <img src="img/logo.png" > 
+                                </a>
+                            </div>
+                                
+                                <a href="#">Inicio</a>
                                 <a href="#Cartelera">Cartelera</a>
                                 <a href="#Proximamente">Próximamente</a>
                                 <a href="/html/preventa.html">Preventa de Entradas</a>
@@ -104,7 +115,7 @@
                     <div class="pelicula">
                         <img class="imgPeli" alt=""  src="img/4698.jpg">
                         <div class="infoPeli">
-                            <a href="/html/seleccion-de-entradas.html" class="textoPeli">Comprar</a>
+                            <button class="textoPeli" id="comprar">Comprar</button>
                             <a href="" class="textoPeli2">Ver info</a>
                         </div>
                         <h4>Spiderman: Across the Spiderverse</h4>
@@ -237,40 +248,27 @@
             </div>
             
         </section>
+        <!-- POP-UP -->
+        <div id="popupSesiones" class="overlay">
+            <div id="popupBody">
+                <h2>Sesión de hoy</h2>
+                <div class="sesioncillas">
+                    <div class="botonSiguiente">
+                        <a href="/html/seleccion-de-entradas.html"> <button id="16:00">16:00</button></a>
+                    </div>
+                    <div class="botonSiguiente">
+                        <a href="/html/seleccion-de-entradas.html"> <button id="18:30">18:30</button></a>
+                    </div>
+                    <div class="botonSiguiente">
+                        <a href="/html/seleccion-de-entradas.html"> <button id="21:00">18:30</button></a>
+                    </div>
+                    <a id="cerrar" href="/html/index.html">&times;</a>
+                </div>
+            </div>
+        </div>
         <script src="js/cartelera.js"></script>
         <script>
-            function getpeliculas() {
-              var peliculas;
-             
-              var xhttp = new XMLHttpRequest();
-              xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                  //document.getElementById("get").innerHTML = this.responseText;
-                  peliculas = this.responseText;
-                }
-              };
-              xhttp.open("GET", "getdestinos.php", true);
-              xhttp.send();
-            }
+            
             </script>
     </body>
 </html>
-<?php
-	$server = "localhost";
-	$user = "root";
-	<!-- $pass = "PatataSalvaje"; -->
-    $pass = "FullStackVigo"
-	$db = "db";
-	$connection = mysqli_connect($server, $user, $pass, $db)
-		or die("Conection Error");
- 
- 
-	$getpeliculas = "select * from peliculas";
-	$result = mysqli_query($connection, $getpeliculas)
-		or die ("Insert Error");
- 
- 
-	while($row = mysqli_fetch_array($result)) {
-	    echo $row['pelicula'];
-	}
-?>

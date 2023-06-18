@@ -24,6 +24,12 @@
     margin-left: 28%;
     margin-top: 15%;
 }
+ .sesioncillas{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:15%;
+ }
 #cerrar{
     position: absolute;
     top: 34%;
