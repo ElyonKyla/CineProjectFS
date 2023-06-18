@@ -42,6 +42,7 @@ a{
 }
 .menu .imagen{
   max-width: 20%;
+  margin-right: -10%;
 }
 .menu img{
   width: 30%;
@@ -51,7 +52,8 @@ a{
     color: beige;
     font-size: 85%;
     padding: 0 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
 }
 .menu a:active{
   text-decoration: underline ;
@@ -130,6 +132,9 @@ a{
 }
 .textoPeli {
   color: white;
+  background-color: #177e83;
+  border-radius:20px;
+  opacity: 1!important ;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -151,8 +156,9 @@ a{
   text-align: center;
   margin-top: -20%;
 }
-.textoPeli a:hover {
-  color: aliceblue;
+.textoPeli button:hover {
+  opacity: 1!important ;
+  border-color: var(--ColorPrincipal);
 }
 .textoPeli2 a:hover{
   opacity: 1;
