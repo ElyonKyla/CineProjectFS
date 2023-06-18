@@ -17,7 +17,8 @@ BotonA1.addEventListener("click", function () {
         var filteredItems = arrayButacas.filter(item => item !== "a1");
         arrayButacas =filteredItems;
         clicA1 = 0;
-    }     
+    }
+    controlButacas();     
 });
     
 var clicA2 = 0;
@@ -34,7 +35,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a2");
             arrayButacas =filteredItems;
             clicA2 = 0;
-        }     
+        }
+        controlButacas();       
     });
 
     var clicA3 = 0;
@@ -51,7 +53,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a3");
             arrayButacas =filteredItems;
             clicA3 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicA4 = 0;
@@ -68,7 +71,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a4");
             arrayButacas =filteredItems;
             clicA4 = 0;
-        }     
+        }    
+        controlButacas();   
     });
 
     var clicA5 = 0;
@@ -85,7 +89,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a5");
             arrayButacas =filteredItems;
             clicA5 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicA6 = 0;
@@ -102,7 +107,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a6");
             arrayButacas =filteredItems;
             clicA6 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicA7 = 0;
@@ -119,7 +125,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a7");
             arrayButacas =filteredItems;
             clicA7 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicA8 = 0;
@@ -136,7 +143,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a8");
             arrayButacas =filteredItems;
             clicA8 = 0;
-        }     
+        }    
+        controlButacas();   
     });
 
     var clicA9 = 0;
@@ -154,6 +162,7 @@ var clicA2 = 0;
             arrayButacas =filteredItems;
             clicA9 = 0;
         }     
+        controlButacas();  
     });
 
     var clicA10 = 0;
@@ -170,7 +179,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a10");
             arrayButacas =filteredItems;
             clicA10 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicA11 = 0;
@@ -187,7 +197,8 @@ var clicA2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "a11");
             arrayButacas =filteredItems;
             clicA11 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -207,7 +218,8 @@ BotonC1.addEventListener("click", function () {
         var filteredItems = arrayButacas.filter(item => item !== "c1");
         arrayButacas =filteredItems;
         clicC1 = 0;
-    }     
+    } 
+    controlButacas();      
 });
     
 var clicC2 = 0;
@@ -224,7 +236,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c2");
             arrayButacas =filteredItems;
             clicC2 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicC3 = 0;
@@ -241,7 +254,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c3");
             arrayButacas =filteredItems;
             clicC3 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicC4 = 0;
@@ -258,7 +272,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c4");
             arrayButacas =filteredItems;
             clicC4 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicC5 = 0;
@@ -275,7 +290,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c5");
             arrayButacas =filteredItems;
             clicC5 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicC6 = 0;
@@ -292,7 +308,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c6");
             arrayButacas =filteredItems;
             clicC6 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicC7 = 0;
@@ -309,7 +326,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c7");
             arrayButacas =filteredItems;
             clicC7 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicC8 = 0;
@@ -326,7 +344,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c8");
             arrayButacas =filteredItems;
             clicC8 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicC9 = 0;
@@ -343,7 +362,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c9");
             arrayButacas =filteredItems;
             clicC9 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicC10 = 0;
@@ -360,7 +380,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c10");
             arrayButacas =filteredItems;
             clicC10 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicC11 = 0;
@@ -377,7 +398,8 @@ var clicC2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "c11");
             arrayButacas =filteredItems;
             clicC11 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
 
@@ -397,7 +419,8 @@ BotonD1.addEventListener("click", function () {
         var filteredItems = arrayButacas.filter(item => item !== "d1");
         arrayButacas =filteredItems;
         clicD1 = 0;
-    }     
+    }  
+    controlButacas();     
 });
     
 var clicD2 = 0;
@@ -414,7 +437,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d2");
             arrayButacas =filteredItems;
             clicD2 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicD3 = 0;
@@ -431,7 +455,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d3");
             arrayButacas =filteredItems;
             clicD3 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicD4 = 0;
@@ -448,7 +473,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d4");
             arrayButacas =filteredItems;
             clicD4 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicD5 = 0;
@@ -465,7 +491,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d5");
             arrayButacas =filteredItems;
             clicD5 = 0;
-        }     
+        }    
+        controlButacas();   
     });
 
     var clicD6 = 0;
@@ -482,7 +509,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d6");
             arrayButacas =filteredItems;
             clicD6 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicD7 = 0;
@@ -499,7 +527,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d7");
             arrayButacas =filteredItems;
             clicD7 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicD8 = 0;
@@ -516,7 +545,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d8");
             arrayButacas =filteredItems;
             clicD8 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicD9 = 0;
@@ -533,7 +563,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d9");
             arrayButacas =filteredItems;
             clicD9 = 0;
-        }     
+        }    
+        controlButacas();   
     });
 
     var clicD10 = 0;
@@ -550,7 +581,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d10");
             arrayButacas =filteredItems;
             clicD10 = 0;
-        }     
+        }    
+        controlButacas();   
     });
 
     var clicD11 = 0;
@@ -567,7 +599,8 @@ var clicD2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "d11");
             arrayButacas =filteredItems;
             clicD11 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -586,7 +619,8 @@ BotonE1.addEventListener("click", function () {
         var filteredItems = arrayButacas.filter(item => item !== "e1");
         arrayButacas =filteredItems;
         clicE1 = 0;
-    }     
+    }   
+    controlButacas();    
 });
     
 var clicE2 = 0;
@@ -603,7 +637,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e2");
             arrayButacas =filteredItems;
             clicE2 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicE3 = 0;
@@ -620,7 +655,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e3");
             arrayButacas =filteredItems;
             clicE3 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicE4 = 0;
@@ -637,7 +673,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e4");
             arrayButacas =filteredItems;
             clicE4 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicE5 = 0;
@@ -654,7 +691,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e5");
             arrayButacas =filteredItems;
             clicE5 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicE6 = 0;
@@ -671,7 +709,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e6");
             arrayButacas =filteredItems;
             clicE6 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicE7 = 0;
@@ -688,7 +727,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e7");
             arrayButacas =filteredItems;
             clicE7 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicE8 = 0;
@@ -705,7 +745,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e8");
             arrayButacas =filteredItems;
             clicE8 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicE9 = 0;
@@ -722,7 +763,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e9");
             arrayButacas =filteredItems;
             clicE9 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicE10 = 0;
@@ -739,7 +781,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e10");
             arrayButacas =filteredItems;
             clicE10 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicE11 = 0;
@@ -756,7 +799,8 @@ var clicE2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "e11");
             arrayButacas =filteredItems;
             clicE11 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -775,7 +819,8 @@ BotonF1.addEventListener("click", function () {
         var filteredItems = arrayButacas.filter(item => item !== "f1");
         arrayButacas =filteredItems;
         clicF1 = 0;
-    }     
+    }  
+    controlButacas();     
 });
     
 var clicF2 = 0;
@@ -792,7 +837,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f2");
             arrayButacas =filteredItems;
             clicF2 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicF3 = 0;
@@ -809,7 +855,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f3");
             arrayButacas =filteredItems;
             clicF3 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicF4 = 0;
@@ -826,7 +873,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f4");
             arrayButacas =filteredItems;
             clicF4 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicF5 = 0;
@@ -843,7 +891,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f5");
             arrayButacas =filteredItems;
             clicF5 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicF6 = 0;
@@ -860,7 +909,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f6");
             arrayButacas =filteredItems;
             clicF6 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicF7 = 0;
@@ -877,7 +927,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f7");
             arrayButacas =filteredItems;
             clicF7 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicF8 = 0;
@@ -894,7 +945,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f8");
             arrayButacas =filteredItems;
             clicF8 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
     var clicF9 = 0;
@@ -911,7 +963,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f9");
             arrayButacas =filteredItems;
             clicF9 = 0;
-        }     
+        }   
+        controlButacas();    
     });
 
     var clicF10 = 0;
@@ -928,7 +981,8 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f10");
             arrayButacas =filteredItems;
             clicF10 = 0;
-        }     
+        } 
+        controlButacas();      
     });
 
     var clicF11 = 0;
@@ -945,12 +999,22 @@ var clicF2 = 0;
             var filteredItems = arrayButacas.filter(item => item !== "f11");
             arrayButacas =filteredItems;
             clicF11 = 0;
-        }     
+        }  
+        controlButacas();     
     });
 
 
 /*fixme*/
 /*NECESITAMMOS QUE AL HACER UN SEGUNDO CLICK SE INVIRTA LO ANTERIOR*/
+function controlButacas(){
+    let botonSigui = document.querySelector("#botonSiguiente");
+    let totalButacas=arrayButacas.length;
+    if (totalButacas>= 1){
+        botonSigui.style.visibility='visible';
+    } else if (totalButacas == 0){
+        botonSigui.style.visibility='hidden';
+    }
+}
 
 const BotonPasarelaPago =  document.querySelector("#BotonPasarelaPago");
 BotonPasarelaPago.addEventListener("click",function(){
