@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -246,6 +249,7 @@
             
         </section>
         <!-- POP-UP -->
+        
         <div id="popupSesiones" class="overlay">
             <div id="popupBody">
                 <h2>Sesión de hoy</h2>
