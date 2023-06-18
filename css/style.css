@@ -40,6 +40,7 @@ a{
     line-height: 1.5;
     justify-content: center;
 }
+
 .menu .imagen{
   max-width: 20%;
   margin-right: -10%;
@@ -71,7 +72,10 @@ a{
     text-decoration-thickness: 3px;
     /*line-height: 2.5;*/
 }
-
+.menu .marcaBuleria a{
+  margin-top: -2px;
+  font-size: 17;
+}
 
 
 .Cartelera{
@@ -595,6 +599,10 @@ a{
   
     .menu img{
       width: 70%;
+    }
+    .menu .marcaBuleria a{
+     display: none;
+      
     }
     /*carousel*/
     .carousel{
