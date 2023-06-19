@@ -32,61 +32,67 @@
                 </div>
             </nav>
         </section>
-        <section>
+        <section> 
             <div class="contenedor">
-                <h2>Compra</h2>
-                <div>
+            <h1>RESUMEN DE LA COMPRA</h1>
+                
+                
+                <div class="datosCompra">
+                    
                     <div>
-                        <p>Película</p>
+                        <h4>Película</h4>
                         <p id="titulo"></p>
                     </div>
                     <div>
-                        <p>Función</p>
+                        <h4>Función</h4>
                         <p id="sesion"></p>
                     </div>
                     <div>
-                        <p>Numero de Entradas</p>
+                        <h4>Numero de Entradas</h4>
                         <p id="entradas"></p>
                     </div>
                     <div>
-                        <p>Butacas</p>
+                        <h4>Butacas</h4>
                         <p id="butacas"></p>
                     </div>
                     <div>
-                        <p>Total Compra</p>
+                        <h3>Total Compra</h3>
                         <p id="total"></p>
                     </div>
                 </div>
             </div>
         </section>
+        <section>
         <div class="contenedor">
-            <h4>RESUMEN DE LA COMPRA</h4>
+            
             <form>
             
                 <fieldset> 
-                    <legend>INFORMACIÓN DEL COMPRADOR</legend>
+                    <legend class="infoComprador">INFORMACIÓN DEL COMPRADOR</legend>
                     <div class="formulario">
+                        
                         <div>
-                            <label>Nombre</label>
-                            <input type="text" placeholder="Tu nombre*">
+                            <label>Nombre:</label>
+                            <input class="labels" type="text" placeholder="Tu nombre*">
                         </div>
                         <div>
-                            <label>Apellido</label>
-                            <input type="text" placeholder="Tus Apellidos*">
+                            <label>Apellido:</label>
+                            <input class="labels" placeholder="Tus Apellidos*">
                         </div>
                         <div>
-                            <label>Telefono</label>
-                            <input type="tel" placeholder="Tu telefono">
+                            <label>Telefono:</label>
+                            <input class="labels" placeholder="Tu telefono">
                         </div>
                         <div>
-                            <label>Mail</label>
-                            <input type="email" placeholder="Tu mail*">
+                            <label>Mail:</label>
+                            <input class="labels" placeholder="Tu mail*">
                         </div>
-                        <button  class="boton boton-primary boton-ghost">Comprar</button>
                     </div>
                 </fieldset> 
             </form>
-         </div>  
+            <button class="botonSiguienteCompri">Comprar</button>
+         </div> 
+         </section> 
          <!-- <div class="contenedor">
             <h2>Compra</h2>
             <p id="titulo"></p>
