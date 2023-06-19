@@ -22,7 +22,7 @@ fetch('cartelera.json')
         var buttonComprar = document.createElement("button");
         buttonComprar.classList.add("textoPeli");
         buttonComprar.onclick = () => {
-            popUpCompra(datosPelicula.id, datosPelicula.titulo);
+            popUpCompra(element.id, element.titulo);
           };
         buttonComprar.textContent = "Comprar";
 
@@ -72,7 +72,9 @@ fetch('cartelera.json')
             // Crear el elemento button con la clase "textoPeli" y el id "comprar"
         var buttonComprar = document.createElement("button");
         buttonComprar.classList.add("textoPeli");
-        buttonComprar.onclick = popUpCompra;
+        buttonComprar.onclick = () => {
+            popUpCompra(element.id, element.titulo);
+          };
         buttonComprar.textContent = "Comprar";
 
         // Crear el elemento anchor (enlace) con la clase "textoPeli2" y el atributo href
@@ -99,40 +101,45 @@ fetch('cartelera.json')
   });
 
 
-const botonCompra =  document.getElementById("comprar");
-    botonCompra.addEventListener("click",function(){
-        let PopUp = document.querySelector("#popupSesiones");
-        PopUp.style.visibility = 'visible';
-        PopUp.style.opacity= 1;
-    })
+
 function popUpCompra(id,titulo){
     entradaPelicula.id=id;
     entradaPelicula.titulo=titulo
-    localStorage.setItem("ordenDeCompra", entradaPelicula);
+    //localStorage.setItem("ordenDeCompra", entradaPelicula);
+    saveStorage();
     let PopUp = document.querySelector("#popupSesiones");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
 }
-    const botonCuatro =  document.querySelector("#16:00");
+    const botonCuatro =  document.querySelector("#cuatro");
     botonCuatro.addEventListener("click",function(){
         //let horaCuatro = document.querySelector("#16:00");
         entradaPelicula.sesion="16:00";
-        localStorage.setItem("ordenDeCompra", entradaPelicula);
+        saveStorage();
+        window.location.href="/html/seleccion-de-entradas.html";
+        //localStorage.setItem("ordenDeCompra", entradaPelicula);
     })
 
-    const botonSeis =  document.querySelector("#18:30");
+    const botonSeis =  document.getElementById("seis");
     botonSeis.addEventListener("click",function(){
         //let horaSeis = document.querySelector("#18:30");
         entradaPelicula.sesion="18:30";
-        localStorage.setItem("ordenDeCompra", entradaPelicula);
+        saveStorage();
+        window.location.href="/html/seleccion-de-entradas.html";
+        //localStorage.setItem("ordenDeCompra", entradaPelicula);
     })
 
-    const botonNueve =  document.querySelector("#21:00");
+    const botonNueve =  document.querySelector("#nueve");
     botonNueve.addEventListener("click",function(){
         //let horaNueve = document.querySelector("#21:00");
         entradaPelicula.sesion="21:00";
-        localStorage.setItem("ordenDeCompra", entradaPelicula);
+        saveStorage();
+        window.location.href="/html/seleccion-de-entradas.html";
+        //localStorage.setItem("ordenDeCompra", entradaPelicula);
     })
-
+    function saveStorage() {
+        datos = JSON.stringify(entradaPelicula)
+        localStorage.setItem("ordenDeCompra", datos);
+      }
 
     

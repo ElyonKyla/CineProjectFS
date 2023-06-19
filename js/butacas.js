@@ -1,7 +1,7 @@
 
 var arrayButacas = new Array();
 
-var ordenDeCompre = localStorage.getItem("ordenDeCompra");
+var ordenDeCompre = JSON.parse(localStorage.getItem("ordenDeCompra"));
 const entradasMaximas = parseInt (ordenDeCompre.numEntradas);
 
 var clicA1 = 0;
@@ -2253,4 +2253,12 @@ function controlButacas(){
 const BotonPasarelaPago =  document.querySelector("#BotonPasarelaPago");
 BotonPasarelaPago.addEventListener("click",function(){
     console.log("Vamos a pagar las entradas");
+    ordenDeCompre.arraButacas=arrayButacas;
+    saveStorage();
+    window.location.href="/html/preconfirmacion.html";
 })
+
+function saveStorage() {
+    datos = JSON.stringify(ordenDeCompre)
+    localStorage.setItem("ordenDeCompra", datos);
+  }

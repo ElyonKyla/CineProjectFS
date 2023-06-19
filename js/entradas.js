@@ -1,5 +1,5 @@
-var ordenDeCompri = localStorage.getItem("ordenDeCompra");
-console.log(ordenDeCompri.titulo);
+var ordenDeCompri = JSON.parse(localStorage.getItem("ordenDeCompra"));
+console.log(ordenDeCompri);
 
 /*Carga de valores a 0 en las entradas*/
 let totalEntradasditas=0;
@@ -217,7 +217,7 @@ botonRestarEnNinho.addEventListener("click",function(){
     //localStorage.setItem("entradasMaximas",totalEntradasditas);
     ordenDeCompri.numEntradas = totalEntradasditas;
     ordenDeCompri.importeTotal=precioEntradas;
-    localStorage.setItem("ordenDeCompra", ordenDeCompri);
+    saveStorage();
  }
 
 /*boton final*/
@@ -226,3 +226,8 @@ botonButacas.addEventListener("click",function(){
     totalEntradas();
     console.log("Vamos a seleccionar las butacas");
 })
+
+function saveStorage() {
+    datos = JSON.stringify(ordenDeCompri)
+    localStorage.setItem("ordenDeCompra", datos);
+  }
