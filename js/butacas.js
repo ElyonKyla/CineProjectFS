@@ -1203,7 +1203,1029 @@ var clicF2 = 0;
         }  
         controlButacas();     
     });
+//////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+var miniclicA1 = 0;
+const miniBotonA1 = document.querySelector("#minia1");
+miniBotonA1.addEventListener("click", function () {
+    if (miniclicA1 == 0) {
+        let minicolorAsiento = document.querySelector("#minia1");
+        minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+        arrayButacas.push("a1");
+        miniclicA1 = 1;
+         
+    } else if (miniclicA1 == 1) {
+        let minicolorAsiento = document.querySelector("#minia1");
+        minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+        var filteredItems = arrayButacas.filter(item => item !== "a1");
+        arrayButacas =filteredItems;
+        miniclicA1 = 0;
+        
+    }
+      controlButacas();   
+});
 
+var miniclicA2 = 0;
+    const miniBotonA2 = document.querySelector("#minia2");
+    miniBotonA2.addEventListener("click", function () {
+        if (miniclicA2 == 0) {
+            let minicolorAsiento = document.querySelector("#minia2");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a2");
+            miniclicA2 = 1;
+             
+        } else if (miniclicA2 == 1) {
+            let minicolorAsiento = document.querySelector("#minia2");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a2");
+            arrayButacas =filteredItems;
+            miniclicA2 = 0;
+            
+        }
+       controlButacas();        
+    });
+
+    var miniclicA3 = 0;
+    const miniBotonA3 = document.querySelector("#minia3");
+    miniBotonA3.addEventListener("click", function () {
+        if (miniclicA3 == 0) {
+            let minicolorAsiento = document.querySelector("#minia3");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a3");
+            miniclicA3 = 1;
+        } else if (miniclicA3 == 1) {
+            let minicolorAsiento = document.querySelector("#minia3");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a3");
+            arrayButacas =filteredItems;
+            miniclicA3 = 0;
+        } 
+        controlButacas();      
+    });
+
+    var miniclicA4 = 0;
+    const miniBotonA4 = document.querySelector("#minia4");
+    miniBotonA4.addEventListener("click", function () {
+        if (miniclicA4 == 0) {
+            let minicolorAsiento = document.querySelector("#minia4");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a4");
+            miniclicA4 = 1;
+        } else if (miniclicA4 == 1) {
+            let minicolorAsiento = document.querySelector("#minia4");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a4");
+            arrayButacas =filteredItems;
+            miniclicA4 = 0;
+        }    
+        controlButacas();   
+    });
+
+    var miniclicA5 = 0;
+    const miniBotonA5 = document.querySelector("#minia5");
+    miniBotonA5.addEventListener("click", function () {
+        if (miniclicA5 == 0) {
+            let minicolorAsiento = document.querySelector("#minia5");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a5");
+            miniclicA5 = 1;
+        } else if (miniclicA5 == 1) {
+            let minicolorAsiento = document.querySelector("#minia5");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a5");
+            arrayButacas =filteredItems;
+            miniclicA5 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicA6 = 0;
+    const miniBotonA6 = document.querySelector("#minia6");
+    miniBotonA6.addEventListener("click", function () {
+        if (miniclicA6 == 0) {
+            let minicolorAsiento = document.querySelector("#minia6");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a6");
+            miniclicA6 = 1;
+        } else if (miniclicA6 == 1) {
+            let minicolorAsiento = document.querySelector("#minia6");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a6");
+            arrayButacas =filteredItems;
+            miniclicA6 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicA7 = 0;
+    const miniBotonA7 = document.querySelector("#minia7");
+    miniBotonA7.addEventListener("click", function () {
+        if (miniclicA7 == 0) {
+            let minicolorAsiento = document.querySelector("#minia7");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a7");
+            miniclicA7 = 1;
+        } else if (miniclicA7 == 1) {
+            let minicolorAsiento = document.querySelector("#minia7");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a7");
+            arrayButacas =filteredItems;
+            miniclicA7 = 0;
+        }   
+        controlButacas();    
+    });
+
+    var miniclicA8 = 0;
+    const miniBotonA8 = document.querySelector("#minia8");
+    miniBotonA8.addEventListener("click", function () {
+        if (miniclicA8 == 0) {
+            let colorAsiento = document.querySelector("#minia8");
+            colorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a8");
+            miniclicA8 = 1;
+        } else if (miniclicA8 == 1) {
+            let minicolorAsiento = document.querySelector("#minia8");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a8");
+            arrayButacas =filteredItems;
+            miniclicA8 = 0;
+        }    
+        controlButacas();   
+    });
+
+    var miniclicA9 = 0;
+    const miniBotonA9 = document.querySelector("#minia9");
+    miniBotonA9.addEventListener("click", function () {
+        if (miniclicA9 == 0) {
+            let minicolorAsiento = document.querySelector("#minia9");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a9");
+            miniclicA9 = 1;
+        } else if (miniclicA9 == 1) {
+            let minicolorAsiento = document.querySelector("#minia9");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a9");
+            arrayButacas =filteredItems;
+            miniclicA9 = 0;
+        }     
+        controlButacas();  
+    });
+
+    var miniclicA10 = 0;
+    const miniBotonA10 = document.querySelector("#minia10");
+    miniBotonA10.addEventListener("click", function () {
+        if (miniclicA10 == 0) {
+            let minicolorAsiento = document.querySelector("#minia10");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a10");
+            miniclicA10 = 1;
+        } else if (miniclicA10 == 1) {
+            let minicolorAsiento = document.querySelector("#minia10");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a10");
+            arrayButacas =filteredItems;
+            miniclicA10 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicA11 = 0;
+    const miniBotonA11 = document.querySelector("#minia11");
+    miniBotonA11.addEventListener("click", function () {
+        if (miniclicA11 == 0) {
+            let minicolorAsiento = document.querySelector("#minia11");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("a11");
+            miniclicA11 = 1;
+        } else if (miniclicA11 == 1) {
+            let minicolorAsiento = document.querySelector("#minia11");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "a11");
+            arrayButacas =filteredItems;
+            miniclicA11 = 0;
+        }   
+        controlButacas();    
+    });
+
+////////////////////////////////////////////////////////////
+
+var miniclicB1 = 0;
+const miniBotonB1 = document.querySelector("#minib1");
+miniBotonB1.addEventListener("click", function () {
+    if (miniclicB1 == 0) {
+        let minicolorAsiento = document.querySelector("#minib1");
+        minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+        arrayButacas.push("b1");
+        miniclicB1 = 1;
+         
+    } else if (miniclicB1 == 1) {
+        let minicolorAsiento = document.querySelector("#minib1");
+        minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+        var filteredItems = arrayButacas.filter(item => item !== "b1");
+        arrayButacas =filteredItems;
+        miniclicB1 = 0;
+        
+    }
+      controlButacas();   
+});
+
+var miniclicB2 = 0;
+    const miniBotonB2 = document.querySelector("#minib2");
+    miniBotonB2.addEventListener("click", function () {
+        if (miniclicB2 == 0) {
+            let minicolorAsiento = document.querySelector("#minib2");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b2");
+            miniclicB2 = 1;
+             
+        } else if (miniclicB2 == 1) {
+            let minicolorAsiento = document.querySelector("#minib2");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b2");
+            arrayButacas =filteredItems;
+            miniclicB2 = 0;
+            
+        }
+       controlButacas();        
+    });
+
+    var miniclicB3 = 0;
+    const miniBotonB3 = document.querySelector("#minib3");
+    miniBotonB3.addEventListener("click", function () {
+        if (miniclicB3 == 0) {
+            let minicolorAsiento = document.querySelector("#minib3");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b3");
+            miniclicB3 = 1;
+        } else if (miniclicB3 == 1) {
+            let minicolorAsiento = document.querySelector("#minib3");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b3");
+            arrayButacas =filteredItems;
+            miniclicB3 = 0;
+        } 
+        controlButacas();      
+    });
+
+    var miniclicB4 = 0;
+    const miniBotonB4 = document.querySelector("#minib4");
+    miniBotonB4.addEventListener("click", function () {
+        if (miniclicB4 == 0) {
+            let minicolorAsiento = document.querySelector("#minib4");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b4");
+            miniclicB4 = 1;
+        } else if (miniclicB4 == 1) {
+            let minicolorAsiento = document.querySelector("#minib4");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b4");
+            arrayButacas =filteredItems;
+            miniclicB4 = 0;
+        }    
+        controlButacas();   
+    });
+
+    var miniclicB5 = 0;
+    const miniBotonB5 = document.querySelector("#minib5");
+    miniBotonB5.addEventListener("click", function () {
+        if (miniclicB5 == 0) {
+            let minicolorAsiento = document.querySelector("#minib5");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b5");
+            miniclicB5 = 1;
+        } else if (miniclicB5 == 1) {
+            let minicolorAsiento = document.querySelector("#minib5");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b5");
+            arrayButacas =filteredItems;
+            miniclicB5 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicB6 = 0;
+    const miniBotonB6 = document.querySelector("#minib6");
+    miniBotonB6.addEventListener("click", function () {
+        if (miniclicB6 == 0) {
+            let minicolorAsiento = document.querySelector("#minib6");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b6");
+            miniclicB6 = 1;
+        } else if (miniclicB6 == 1) {
+            let minicolorAsiento = document.querySelector("#minib6");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b6");
+            arrayButacas =filteredItems;
+            miniclicB6 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicB7 = 0;
+    const miniBotonB7 = document.querySelector("#minib7");
+    miniBotonB7.addEventListener("click", function () {
+        if (miniclicB7 == 0) {
+            let minicolorAsiento = document.querySelector("#minib7");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b7");
+            miniclicB7 = 1;
+        } else if (miniclicB7 == 1) {
+            let minicolorAsiento = document.querySelector("#minib7");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b7");
+            arrayButacas =filteredItems;
+            miniclicB7 = 0;
+        }   
+        controlButacas();    
+    });
+
+    var miniclicB8 = 0;
+    const miniBotonB8 = document.querySelector("#minib8");
+    miniBotonB8.addEventListener("click", function () {
+        if (miniclicB8 == 0) {
+            let colorAsiento = document.querySelector("#minib8");
+            colorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b8");
+            miniclicB8 = 1;
+        } else if (miniclicB8 == 1) {
+            let minicolorAsiento = document.querySelector("#minib8");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b8");
+            arrayButacas =filteredItems;
+            miniclicB8 = 0;
+        }    
+        controlButacas();   
+    });
+
+    var miniclicB9 = 0;
+    const miniBotonB9 = document.querySelector("#minib9");
+    miniBotonB9.addEventListener("click", function () {
+        if (miniclicB9 == 0) {
+            let minicolorAsiento = document.querySelector("#minib9");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b9");
+            miniclicB9 = 1;
+        } else if (miniclicB9 == 1) {
+            let minicolorAsiento = document.querySelector("#minib9");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b9");
+            arrayButacas =filteredItems;
+            miniclicB9 = 0;
+        }     
+        controlButacas();  
+    });
+
+    var miniclicB10 = 0;
+    const miniBotonB10 = document.querySelector("#minib10");
+    miniBotonB10.addEventListener("click", function () {
+        if (miniclicB10 == 0) {
+            let minicolorAsiento = document.querySelector("#minib10");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b10");
+            miniclicB10 = 1;
+        } else if (miniclicB10 == 1) {
+            let minicolorAsiento = document.querySelector("#minib10");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b10");
+            arrayButacas =filteredItems;
+            miniclicB10 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicB11 = 0;
+    const miniBotonB11 = document.querySelector("#minib11");
+    miniBotonB11.addEventListener("click", function () {
+        if (miniclicB11 == 0) {
+            let minicolorAsiento = document.querySelector("#minib11");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("b11");
+            miniclicB11 = 1;
+        } else if (miniclicB11 == 1) {
+            let minicolorAsiento = document.querySelector("#minib11");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "b11");
+            arrayButacas =filteredItems;
+            miniclicB11 = 0;
+        }   
+        controlButacas();    
+    });
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    var miniclicD1 = 0;
+const miniBotonD1 = document.querySelector("#minid1");
+miniBotonD1.addEventListener("click", function () {
+    if (miniclicD1 == 0) {
+        let minicolorAsiento = document.querySelector("#minid1");
+        minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+        arrayButacas.push("d1");
+        miniclicD1 = 1;
+         
+    } else if (miniclicD1 == 1) {
+        let minicolorAsiento = document.querySelector("#minid1");
+        minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+        var filteredItems = arrayButacas.filter(item => item !== "d1");
+        arrayButacas =filteredItems;
+        miniclicD1 = 0;
+        
+    }
+      controlButacas();   
+});
+
+var miniclicD2 = 0;
+    const miniBotonD2 = document.querySelector("#minid2");
+    miniBotonD2.addEventListener("click", function () {
+        if (miniclicD2 == 0) {
+            let minicolorAsiento = document.querySelector("#minid2");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d2");
+            miniclicD2 = 1;
+             
+        } else if (miniclicD2 == 1) {
+            let minicolorAsiento = document.querySelector("#minid2");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d2");
+            arrayButacas =filteredItems;
+            miniclicD2 = 0;
+            
+        }
+       controlButacas();        
+    });
+
+    var miniclicD3 = 0;
+    const miniBotonD3 = document.querySelector("#minid3");
+    miniBotonD3.addEventListener("click", function () {
+        if (miniclicD3 == 0) {
+            let minicolorAsiento = document.querySelector("#minid3");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d3");
+            miniclicD3 = 1;
+        } else if (miniclicD3 == 1) {
+            let minicolorAsiento = document.querySelector("#minid3");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d3");
+            arrayButacas =filteredItems;
+            miniclicD3 = 0;
+        } 
+        controlButacas();      
+    });
+
+    var miniclicD4 = 0;
+    const miniBotonD4 = document.querySelector("#minid4");
+    miniBotonD4.addEventListener("click", function () {
+        if (miniclicD4 == 0) {
+            let minicolorAsiento = document.querySelector("#minid4");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d4");
+            miniclicD4 = 1;
+        } else if (miniclicD4 == 1) {
+            let minicolorAsiento = document.querySelector("#minid4");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d4");
+            arrayButacas =filteredItems;
+            miniclicD4 = 0;
+        }    
+        controlButacas();   
+    });
+
+    var miniclicD5 = 0;
+    const miniBotonD5 = document.querySelector("#minid5");
+    miniBotonD5.addEventListener("click", function () {
+        if (miniclicD5 == 0) {
+            let minicolorAsiento = document.querySelector("#minid5");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d5");
+            miniclicD5 = 1;
+        } else if (miniclicD5 == 1) {
+            let minicolorAsiento = document.querySelector("#minid5");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d5");
+            arrayButacas =filteredItems;
+            miniclicD5 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicD6 = 0;
+    const miniBotonD6 = document.querySelector("#minid6");
+    miniBotonD6.addEventListener("click", function () {
+        if (miniclicD6 == 0) {
+            let minicolorAsiento = document.querySelector("#minid6");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d6");
+            miniclicD6 = 1;
+        } else if (miniclicD6 == 1) {
+            let minicolorAsiento = document.querySelector("#minid6");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d6");
+            arrayButacas =filteredItems;
+            miniclicD6 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicD7 = 0;
+    const miniBotonD7 = document.querySelector("#minid7");
+    miniBotonD7.addEventListener("click", function () {
+        if (miniclicD7 == 0) {
+            let minicolorAsiento = document.querySelector("#minid7");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d7");
+            miniclicD7 = 1;
+        } else if (miniclicD7 == 1) {
+            let minicolorAsiento = document.querySelector("#minid7");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d7");
+            arrayButacas =filteredItems;
+            miniclicD7 = 0;
+        }   
+        controlButacas();    
+    });
+
+    var miniclicD8 = 0;
+    const miniBotonD8 = document.querySelector("#minid8");
+    miniBotonD8.addEventListener("click", function () {
+        if (miniclicD8 == 0) {
+            let colorAsiento = document.querySelector("#minid8");
+            colorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d8");
+            miniclicD8 = 1;
+        } else if (miniclicD8 == 1) {
+            let minicolorAsiento = document.querySelector("#minid8");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d8");
+            arrayButacas =filteredItems;
+            miniclicD8 = 0;
+        }    
+        controlButacas();   
+    });
+
+    var miniclicD9 = 0;
+    const miniBotonD9 = document.querySelector("#minid9");
+    miniBotonD9.addEventListener("click", function () {
+        if (miniclicD9 == 0) {
+            let minicolorAsiento = document.querySelector("#minid9");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d9");
+            miniclicD9 = 1;
+        } else if (miniclicD9 == 1) {
+            let minicolorAsiento = document.querySelector("#minid9");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d9");
+            arrayButacas =filteredItems;
+            miniclicD9 = 0;
+        }     
+        controlButacas();  
+    });
+
+    var miniclicD10 = 0;
+    const miniBotonD10 = document.querySelector("#minid10");
+    miniBotonD10.addEventListener("click", function () {
+        if (miniclicD10 == 0) {
+            let minicolorAsiento = document.querySelector("#minid10");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d10");
+            miniclicD10 = 1;
+        } else if (miniclicD10 == 1) {
+            let minicolorAsiento = document.querySelector("#minid10");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d10");
+            arrayButacas =filteredItems;
+            miniclicD10 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicD11 = 0;
+    const miniBotonD11 = document.querySelector("#minid11");
+    miniBotonD11.addEventListener("click", function () {
+        if (miniclicD11 == 0) {
+            let minicolorAsiento = document.querySelector("#minid11");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("d11");
+            miniclicD11 = 1;
+        } else if (miniclicD11 == 1) {
+            let minicolorAsiento = document.querySelector("#minid11");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "d11");
+            arrayButacas =filteredItems;
+            miniclicD11 = 0;
+        }   
+        controlButacas();    
+    });
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    var miniclicE1 = 0;
+    const miniBotonE1 = document.querySelector("#minie1");
+    miniBotonE1.addEventListener("click", function () {
+        if (miniclicE1 == 0) {
+            let minicolorAsiento = document.querySelector("#minie1");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("e1");
+            miniclicE1 = 1;
+             
+        } else if (miniclicE1 == 1) {
+            let minicolorAsiento = document.querySelector("#minie1");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "e1");
+            arrayButacas =filteredItems;
+            miniclicD1 = 0;
+            
+        }
+          controlButacas();   
+    });
+    
+    var miniclicE2 = 0;
+        const miniBotonE2 = document.querySelector("#minie2");
+        miniBotonE2.addEventListener("click", function () {
+            if (miniclicE2 == 0) {
+                let minicolorAsiento = document.querySelector("#minie2");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e2");
+                miniclicE2 = 1;
+                 
+            } else if (miniclicE2 == 1) {
+                let minicolorAsiento = document.querySelector("#minie2");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e2");
+                arrayButacas =filteredItems;
+                miniclicE2 = 0;
+                
+            }
+           controlButacas();        
+        });
+    
+        var miniclicE3 = 0;
+        const miniBotonE3 = document.querySelector("#minie3");
+        miniBotonE3.addEventListener("click", function () {
+            if (miniclicE3 == 0) {
+                let minicolorAsiento = document.querySelector("#minie3");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e3");
+                miniclicE3 = 1;
+            } else if (miniclicE3 == 1) {
+                let minicolorAsiento = document.querySelector("#minie3");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e3");
+                arrayButacas =filteredItems;
+                miniclicD3 = 0;
+            } 
+            controlButacas();      
+        });
+    
+        var miniclicE4 = 0;
+        const miniBotonE4 = document.querySelector("#minie4");
+        miniBotonE4.addEventListener("click", function () {
+            if (miniclicE4 == 0) {
+                let minicolorAsiento = document.querySelector("#minie4");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e4");
+                miniclicE4 = 1;
+            } else if (miniclicE4 == 1) {
+                let minicolorAsiento = document.querySelector("#minie4");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e4");
+                arrayButacas =filteredItems;
+                miniclicE4 = 0;
+            }    
+            controlButacas();   
+        });
+    
+        var miniclicE5 = 0;
+        const miniBotonE5 = document.querySelector("#minie5");
+        miniBotonE5.addEventListener("click", function () {
+            if (miniclicE5 == 0) {
+                let minicolorAsiento = document.querySelector("#minie5");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e5");
+                miniclicE5 = 1;
+            } else if (miniclicE5 == 1) {
+                let minicolorAsiento = document.querySelector("#minie5");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e5");
+                arrayButacas =filteredItems;
+                miniclicE5 = 0;
+            }  
+            controlButacas();     
+        });
+    
+        var miniclicE6 = 0;
+        const miniBotonE6 = document.querySelector("#minie6");
+        miniBotonE6.addEventListener("click", function () {
+            if (miniclicE6 == 0) {
+                let minicolorAsiento = document.querySelector("#minie6");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e6");
+                miniclicE6 = 1;
+            } else if (miniclicE6 == 1) {
+                let minicolorAsiento = document.querySelector("#minie6");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e6");
+                arrayButacas =filteredItems;
+                miniclicE6 = 0;
+            }  
+            controlButacas();     
+        });
+    
+        var miniclicE7 = 0;
+        const miniBotonE7 = document.querySelector("#minie7");
+        miniBotonE7.addEventListener("click", function () {
+            if (miniclicE7 == 0) {
+                let minicolorAsiento = document.querySelector("#minie7");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e7");
+                miniclicE7 = 1;
+            } else if (miniclicE7 == 1) {
+                let minicolorAsiento = document.querySelector("#minie7");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e7");
+                arrayButacas =filteredItems;
+                miniclicE7 = 0;
+            }   
+            controlButacas();    
+        });
+    
+        var miniclicE8 = 0;
+        const miniBotonE8 = document.querySelector("#minie8");
+        miniBotonE8.addEventListener("click", function () {
+            if (miniclicE8 == 0) {
+                let colorAsiento = document.querySelector("#minie8");
+                colorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e8");
+                miniclicE8 = 1;
+            } else if (miniclicE8 == 1) {
+                let minicolorAsiento = document.querySelector("#minie8");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e8");
+                arrayButacas =filteredItems;
+                miniclicE8 = 0;
+            }    
+            controlButacas();   
+        });
+    
+        var miniclicE9 = 0;
+        const miniBotonE9 = document.querySelector("#minie9");
+        miniBotonE9.addEventListener("click", function () {
+            if (miniclicE9 == 0) {
+                let minicolorAsiento = document.querySelector("#minie9");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("d9");
+                miniclicE9 = 1;
+            } else if (miniclicE9 == 1) {
+                let minicolorAsiento = document.querySelector("#minie9");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e9");
+                arrayButacas =filteredItems;
+                miniclicE9 = 0;
+            }     
+            controlButacas();  
+        });
+    
+        var miniclicE10 = 0;
+        const miniBotonE10 = document.querySelector("#minie10");
+        miniBotonE10.addEventListener("click", function () {
+            if (miniclicE10 == 0) {
+                let minicolorAsiento = document.querySelector("#minie10");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e10");
+                miniclicE10 = 1;
+            } else if (miniclicE10 == 1) {
+                let minicolorAsiento = document.querySelector("#minie10");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e10");
+                arrayButacas =filteredItems;
+                miniclicE10 = 0;
+            }  
+            controlButacas();     
+        });
+    
+        var miniclicE11 = 0;
+        const miniBotonE11 = document.querySelector("#minie11");
+        miniBotonE11.addEventListener("click", function () {
+            if (miniclicE11 == 0) {
+                let minicolorAsiento = document.querySelector("#minie11");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+                arrayButacas.push("e11");
+                miniclicE11 = 1;
+            } else if (miniclicE11 == 1) {
+                let minicolorAsiento = document.querySelector("#minie11");
+                minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+                var filteredItems = arrayButacas.filter(item => item !== "e11");
+                arrayButacas =filteredItems;
+                miniclicE11 = 0;
+            }   
+            controlButacas();    
+        });
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////
+    var miniclicF1 = 0;
+const miniBotonF1 = document.querySelector("#minif1");
+miniBotonF1.addEventListener("click", function () {
+    if (miniclicF1 == 0) {
+        let minicolorAsiento = document.querySelector("#minif1");
+        minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+        arrayButacas.push("f1");
+        miniclicF1 = 1;
+         
+    } else if (miniclicF1 == 1) {
+        let minicolorAsiento = document.querySelector("#minif1");
+        minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+        var filteredItems = arrayButacas.filter(item => item !== "f1");
+        arrayButacas =filteredItems;
+        miniclicF1 = 0;
+        
+    }
+      controlButacas();   
+});
+
+var miniclicF2 = 0;
+    const miniBotonF2 = document.querySelector("#minif2");
+    miniBotonF2.addEventListener("click", function () {
+        if (miniclicF2 == 0) {
+            let minicolorAsiento = document.querySelector("#minif2");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f2");
+            miniclicF2 = 1;
+             
+        } else if (miniclicF2 == 1) {
+            let minicolorAsiento = document.querySelector("#minif2");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f2");
+            arrayButacas =filteredItems;
+            miniclicF2 = 0;
+            
+        }
+       controlButacas();        
+    });
+
+    var miniclicF3 = 0;
+    const miniBotonF3 = document.querySelector("#minif3");
+    miniBotonF3.addEventListener("click", function () {
+        if (miniclicF3 == 0) {
+            let minicolorAsiento = document.querySelector("#minif3");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f3");
+            miniclicF3 = 1;
+        } else if (miniclicF3 == 1) {
+            let minicolorAsiento = document.querySelector("#minif3");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f3");
+            arrayButacas =filteredItems;
+            miniclicF3 = 0;
+        } 
+        controlButacas();      
+    });
+
+    var miniclicF4 = 0;
+    const miniBotonF4 = document.querySelector("#minif4");
+    miniBotonF4.addEventListener("click", function () {
+        if (miniclicF4 == 0) {
+            let minicolorAsiento = document.querySelector("#minif4");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f4");
+            miniclicF4 = 1;
+        } else if (miniclicF4 == 1) {
+            let minicolorAsiento = document.querySelector("#minif4");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f4");
+            arrayButacas =filteredItems;
+            miniclicF4 = 0;
+        }    
+        controlButacas();   
+    });
+
+    var miniclicF5 = 0;
+    const miniBotonF5 = document.querySelector("#minif5");
+    miniBotonF5.addEventListener("click", function () {
+        if (miniclicF5 == 0) {
+            let minicolorAsiento = document.querySelector("#minif5");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f5");
+            miniclicF5 = 1;
+        } else if (miniclicF5 == 1) {
+            let minicolorAsiento = document.querySelector("#minif5");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f5");
+            arrayButacas =filteredItems;
+            miniclicF5 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicF6 = 0;
+    const miniBotonF6 = document.querySelector("#minif6");
+    miniBotonF6.addEventListener("click", function () {
+        if (miniclicF6 == 0) {
+            let minicolorAsiento = document.querySelector("#minif6");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f6");
+            miniclicF6 = 1;
+        } else if (miniclicF6 == 1) {
+            let minicolorAsiento = document.querySelector("#minif6");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f6");
+            arrayButacas =filteredItems;
+            miniclicF6 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicF7 = 0;
+    const miniBotonF7 = document.querySelector("#minif7");
+    miniBotonF7.addEventListener("click", function () {
+        if (miniclicF7 == 0) {
+            let minicolorAsiento = document.querySelector("#minif7");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f7");
+            miniclicF7 = 1;
+        } else if (miniclicF7 == 1) {
+            let minicolorAsiento = document.querySelector("#minif7");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f7");
+            arrayButacas =filteredItems;
+            miniclicF7 = 0;
+        }   
+        controlButacas();    
+    });
+
+    var miniclicF8 = 0;
+    const miniBotonF8 = document.querySelector("#minif8");
+    miniBotonF8.addEventListener("click", function () {
+        if (miniclicF8 == 0) {
+            let colorAsiento = document.querySelector("#minif8");
+            colorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f8");
+            miniclicF8 = 1;
+        } else if (miniclicF8 == 1) {
+            let minicolorAsiento = document.querySelector("#minif8");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f8");
+            arrayButacas =filteredItems;
+            miniclicF8 = 0;
+        }    
+        controlButacas();   
+    });
+
+    var miniclicF9 = 0;
+    const miniBotonF9 = document.querySelector("#minif9");
+    miniBotonF9.addEventListener("click", function () {
+        if (miniclicF9 == 0) {
+            let minicolorAsiento = document.querySelector("#minif9");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f9");
+            miniclicF9 = 1;
+        } else if (miniclicF9 == 1) {
+            let minicolorAsiento = document.querySelector("#minif9");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f9");
+            arrayButacas =filteredItems;
+            miniclicF9 = 0;
+        }     
+        controlButacas();  
+    });
+
+    var miniclicF10 = 0;
+    const miniBotonF10 = document.querySelector("#minif10");
+    miniBotonF10.addEventListener("click", function () {
+        if (miniclicF10 == 0) {
+            let minicolorAsiento = document.querySelector("#minif10");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f10");
+            miniclicF10 = 1;
+        } else if (miniclicF10 == 1) {
+            let minicolorAsiento = document.querySelector("#minif10");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f10");
+            arrayButacas =filteredItems;
+            miniclicF10 = 0;
+        }  
+        controlButacas();     
+    });
+
+    var miniclicF11 = 0;
+    const miniBotonF11 = document.querySelector("#minif11");
+    miniBotonF11.addEventListener("click", function () {
+        if (miniclicF11 == 0) {
+            let minicolorAsiento = document.querySelector("#minif11");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-morado.png')";
+            arrayButacas.push("f11");
+            miniclicF11 = 1;
+        } else if (miniclicF11 == 1) {
+            let minicolorAsiento = document.querySelector("#minif11");
+            minicolorAsiento.style.backgroundImage = "url('/img/25-butaca-perry.png')";
+            var filteredItems = arrayButacas.filter(item => item !== "f11");
+            arrayButacas =filteredItems;
+            miniclicF11 = 0;
+        }   
+        controlButacas();    
+    });
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 
 /*fixme*/
 /*NECESITAMMOS QUE AL HACER UN SEGUNDO CLICK SE INVIRTA LO ANTERIOR*/
