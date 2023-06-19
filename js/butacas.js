@@ -1,6 +1,8 @@
 
 var arrayButacas = new Array();
-const entradasMaximas = parseInt (localStorage.getItem("entradasMaximas"));
+
+var ordenDeCompre = localStorage.getItem("ordenDeCompra");
+const entradasMaximas = parseInt (ordenDeCompre.numEntradas);
 
 var clicA1 = 0;
 const BotonA1 = document.querySelector("#a1");

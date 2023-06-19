@@ -1,3 +1,5 @@
+var ordenDeCompri = localStorage.getItem("ordenDeCompra");
+console.log(ordenDeCompri.titulo);
 
 /*Carga de valores a 0 en las entradas*/
 let totalEntradasditas=0;
@@ -212,8 +214,10 @@ botonRestarEnNinho.addEventListener("click",function(){
     }
     let precioEntradas = entradaFamilia*6.90+entradaNinho*7.90+entradaSenior*7.90+entradaAdulto*10.90+entradaJoven*7.90;
     
-    localStorage.setItem("entradasMaximas",totalEntradasditas);
-    
+    //localStorage.setItem("entradasMaximas",totalEntradasditas);
+    ordenDeCompri.numEntradas = totalEntradasditas;
+    ordenDeCompri.importeTotal=precioEntradas;
+    localStorage.setItem("ordenDeCompra", ordenDeCompri);
  }
 
 /*boton final*/

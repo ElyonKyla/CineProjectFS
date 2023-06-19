@@ -1,3 +1,4 @@
+var entradaPelicula ={} ;
 fetch('cartelera.json')
   .then(response => response.json())
   .then(data => {
@@ -20,8 +21,11 @@ fetch('cartelera.json')
             // Crear el elemento button con la clase "textoPeli" y el id "comprar"
         var buttonComprar = document.createElement("button");
         buttonComprar.classList.add("textoPeli");
-        buttonComprar.onclick = popUpCompra;
+        buttonComprar.onclick = () => {
+            popUpCompra(datosPelicula.id, datosPelicula.titulo);
+          };
         buttonComprar.textContent = "Comprar";
+
 
         // Crear el elemento anchor (enlace) con la clase "textoPeli2" y el atributo href
         var anchorVerInfo = document.createElement("a");
@@ -101,22 +105,34 @@ const botonCompra =  document.getElementById("comprar");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
     })
-function popUpCompra(){
+function popUpCompra(id,titulo){
+    entradaPelicula.id=id;
+    entradaPelicula.titulo=titulo
+    localStorage.setItem("ordenDeCompra", entradaPelicula);
     let PopUp = document.querySelector("#popupSesiones");
         PopUp.style.visibility = 'visible';
         PopUp.style.opacity= 1;
 }
     const botonCuatro =  document.querySelector("#16:00");
     botonCuatro.addEventListener("click",function(){
-        let horaCuatro = document.querySelector("#16:00");
+        //let horaCuatro = document.querySelector("#16:00");
+        entradaPelicula.sesion="16:00";
+        localStorage.setItem("ordenDeCompra", entradaPelicula);
     })
 
     const botonSeis =  document.querySelector("#18:30");
     botonSeis.addEventListener("click",function(){
-        let horaSeis = document.querySelector("#18:30");
+        //let horaSeis = document.querySelector("#18:30");
+        entradaPelicula.sesion="18:30";
+        localStorage.setItem("ordenDeCompra", entradaPelicula);
     })
 
     const botonNueve =  document.querySelector("#21:00");
     botonNueve.addEventListener("click",function(){
-        let horaNueve = document.querySelector("#21:00");
+        //let horaNueve = document.querySelector("#21:00");
+        entradaPelicula.sesion="21:00";
+        localStorage.setItem("ordenDeCompra", entradaPelicula);
     })
+
+
+    
