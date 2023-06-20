@@ -92,7 +92,7 @@ a{
 .peliculas {
     max-width: fit-content;
     display: grid;
-    grid-template-rows: 50% 50%;
+    /* grid-template-rows: 50% 50%; */
     grid-template-columns: repeat(5,1fr);
     gap: 15px;
 
