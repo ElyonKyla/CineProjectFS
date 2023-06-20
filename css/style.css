@@ -325,8 +325,21 @@ a{
   height: 65%;
 }
 /*Formulario*/
+.compraConTodo{
+  display: flex;
+}
+.imgCompra{
+  flex: 40%;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
 .datosCompra{
-  display: grid;
+  flex:60%;
+  max-width: 60%;
+    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr ;
 }
@@ -336,7 +349,7 @@ a{
 }
 .datosCompra h2 {
   color: var(--ColorSecundario);
-  font-size:24px;
+  font-size:2423px;
 }
 .datosCompra p{
   color: var(--ColorRefuerzo);
@@ -350,6 +363,12 @@ a{
   align-items: flex-start;
   padding: 30px 30px;
   color: var(--ColorRefuerzo);
+}
+.labelito{
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-right: 2px;;
 }
 .formulario label{
   font-size: 20px;
@@ -725,6 +744,9 @@ a{
       width: 25px;
       height: 25px;
       background-image: url(../img/25-butaca-morado.png);
+    }
+    .botonSiguienteCompri{
+      width: 23%;
     }
     /*footer*/
       .licenciasLegales{

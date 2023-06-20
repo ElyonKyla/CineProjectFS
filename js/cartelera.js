@@ -104,7 +104,8 @@ fetch('cartelera.json')
 
 function popUpCompra(id,titulo){
     entradaPelicula.id=id;
-    entradaPelicula.titulo=titulo
+    entradaPelicula.titulo=titulo;
+    //entradaPelicula.cartel=cartel.src;
     //localStorage.setItem("ordenDeCompra", entradaPelicula);
     saveStorage();
     let PopUp = document.querySelector("#popupSesiones");
@@ -114,6 +115,7 @@ function popUpCompra(id,titulo){
     const botonCuatro =  document.querySelector("#cuatro");
     botonCuatro.addEventListener("click",function(){
         //let horaCuatro = document.querySelector("#16:00");
+        
         entradaPelicula.sesion="16:00";
         saveStorage();
         window.location.href="/html/seleccion-de-entradas.html";
