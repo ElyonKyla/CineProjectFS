@@ -58,16 +58,16 @@ a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10px;
 }
-.menu a:active{
+/*.menu a:active{
   text-decoration: underline ;
   text-decoration-color: var(--ColorPrincipal);
   background-color: var(--ColorSecundario);
 }
-.menu a:visited{
+ .menu a:visited{
   text-decoration: underline ;
   text-decoration-color: var(--ColorPrincipal);
   background-color: var(--ColorSecundario);
-}
+} */
 .menu a:hover{
     text-decoration: underline ;
     text-decoration-color: var(--ColorSecundario);
