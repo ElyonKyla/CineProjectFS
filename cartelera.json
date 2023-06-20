@@ -16,5 +16,11 @@
     "sesiones": ["16:00","18:30","21:00" ]},
     {"titulo":"La Sirenita",
     "id": 447277,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Como Dios manda",
+    "id": 1064103,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Guardianes de la Galaxia: Volumen 3 ",
+    "id": 447365,
     "sesiones": ["16:00","18:30","21:00" ]}
     ]

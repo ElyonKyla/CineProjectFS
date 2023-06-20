@@ -4,5 +4,14 @@
     "sesiones": ["16:00","18:30","21:00" ]},
     {"titulo":"Barbie",
     "id": 346698,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Asteroid City ",
+    "id": 747188,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Misión: Imposible - Sentencia mortal parte uno ",
+    "id": 575264,
+    "sesiones": ["16:00","18:30","21:00" ]},
+    {"titulo":"Oppenheimer ",
+    "id": 872585,
     "sesiones": ["16:00","18:30","21:00" ]}
 ]
