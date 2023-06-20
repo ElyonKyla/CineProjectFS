@@ -2248,11 +2248,13 @@ function controlButacas(){
         PopUpButacas.style.opacity= 1;
     }
     
+    
 }
 
 const BotonPasarelaPago =  document.querySelector("#BotonPasarelaPago");
 BotonPasarelaPago.addEventListener("click",function(){
     console.log("Vamos a pagar las entradas");
+    faltanEntradas();
     ordenDeCompre.arraButacas=arrayButacas;
     saveStorage();
     window.location.href="/html/preconfirmacion.html";
@@ -2261,4 +2263,14 @@ BotonPasarelaPago.addEventListener("click",function(){
 function saveStorage() {
     datos = JSON.stringify(ordenDeCompre)
     localStorage.setItem("ordenDeCompra", datos);
+  }
+  function faltanEntradas(){
+     let totalButacas=arrayButacas.length;
+     console.log(totalButacas, typeof totalButacas);
+     console.log(entradasMaximas, typeof entradasMaximas);
+    if( totalButacas < entradasMaximas){
+            let PopUpFaltan = document.querySelector("#popupFaltan");
+            PopUpFaltan.style.visibility = 'visible';
+            PopUpFaltan.style.opacity= 1;
+        }
   }

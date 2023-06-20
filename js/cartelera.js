@@ -84,7 +84,7 @@ fetch('cartelera.json')
         anchorVerInfo.textContent = "Ver info";
 
         // Agregar el button y el anchor al div
-        divInfoPeli.appendChild(buttonComprar);
+       // divInfoPeli.appendChild(buttonComprar);
         divInfoPeli.appendChild(anchorVerInfo);
         //
         divPeliculaIndividual.appendChild(divInfoPeli);
@@ -105,7 +105,7 @@ fetch('cartelera.json')
 function popUpCompra(id,titulo){
     entradaPelicula.id=id;
     entradaPelicula.titulo=titulo;
-    //entradaPelicula.cartel=cartel.src;
+    //entradaPelicula.cartel=datos.src;
     //localStorage.setItem("ordenDeCompra", entradaPelicula);
     saveStorage();
     let PopUp = document.querySelector("#popupSesiones");
