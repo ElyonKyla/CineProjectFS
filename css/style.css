@@ -720,7 +720,7 @@ a{
     .Proximamente{
       display: none;
     }
-    /**/
+    /*butacas*/
     .ticket {
       max-width: 100%;
       flex-wrap: wrap;
@@ -745,6 +745,23 @@ a{
       height: 25px;
       background-image: url(../img/25-butaca-morado.png);
     }
+    /*promos*/
+    .promos{
+      display: block;
+    }
+    .imgPromo {
+     display: block;
+      max-width: 100%; 
+    }
+    .imgPromo img{
+      width: 60%;
+    }
+    .textoPromo{
+      max-width: 100%;
+      display: flex; 
+      justify-content:flex-start ;
+    }
+    /*precompra*/
     .botonSiguienteCompri{
       width: 23%;
     }
